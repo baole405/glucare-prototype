@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Calibri", "Segoe UI", sans-serif;
+  color: #1f3b4d;
+  background: #f1f7fb;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 48px 24px 64px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+header p {
+  margin: 12px auto 0;
+  max-width: 560px;
+  line-height: 1.6;
+  color: #4c6374;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 12px 32px rgba(19, 68, 106, 0.08);
+  border: 1px solid rgba(71, 138, 166, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(19, 68, 106, 0.12);
+}
+
+.card h2 {
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+
+.card p {
+  flex: 1 1 auto;
+  margin: 0 0 18px;
+  line-height: 1.5;
+  color: #546d80;
+}
+
+.card a {
+  align-self: flex-start;
+  text-decoration: none;
+  background: #0b567d;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.card a:hover {
+  background: #094362;
+}
+
+footer {
+  text-align: center;
+  margin-top: 48px;
+  font-size: 14px;
+  color: #6f8595;
+}
