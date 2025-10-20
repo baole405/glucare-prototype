@@ -13,31 +13,46 @@
     })(window, document, "clarity", "script", "YOUR_CLARITY_ID");
   </script>
   <style>
-    .welcome {
+    .landing {
       align-items: center;
       text-align: center;
-      gap: 24px;
+      gap: 32px;
     }
 
-    .welcome img {
-      width: 120px;
-      margin: 12px auto;
+    .logo-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      margin-top: 32px;
+    }
+
+    .logo-wrapper img {
+      width: 160px;
+    }
+
+    .logo-wrapper h1 {
+      margin: 0;
+      font-size: 32px;
+      letter-spacing: 1px;
     }
   </style>
 </head>
 <body>
-  <main class="screen welcome">
+  <main class="screen landing">
     <header class="app-bar">
       <strong>GluCare</strong>
       <span class="app-bar__brand">Prototype</span>
     </header>
-    <div class="content" style="gap:32px;">
-      <section>
+    <div class="content" style="gap:32px; align-items:center;">
+      <section class="logo-wrapper">
         <img src="./images/v169_942.png" alt="Biểu tượng GluCare" />
-        <h1>Chào mừng đến với GluCare</h1>
-        <p>Ứng dụng theo dõi đường huyết và chăm sóc dinh dưỡng cá nhân.</p>
+        <h1>GluCare</h1>
       </section>
-      <a class="primary-btn" href="./login/index.html">Bắt đầu trải nghiệm</a>
+      <div class="button-row">
+        <a class="primary-btn" href="./login/index.html">Đăng nhập</a>
+        <a class="secondary-btn" href="./register/index.html">Đăng ký</a>
+      </div>
     </div>
   </main>
 </body>
