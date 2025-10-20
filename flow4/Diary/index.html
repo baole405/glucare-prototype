@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <link href="https://fonts.googleapis.com/css?family=Calibri&display=swap" rel="stylesheet" />
+  <link href="./css/main.css" rel="stylesheet" />
+  <title>Nhật ký</title>
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "YOUR_CLARITY_ID");
+  </script>
+</head>
+<body>
+  <main class="screen">
+    <header class="app-bar">
+      <div class="brand">
+        <span class="brand__logo">Dia</span>
+        <span class="brand__name">GluCare</span>
+      </div>
+      <nav class="tabs">
+        <a class="tab" href="../../flow3/trending1/index.html">Xu hướng</a>
+        <span class="tab tab--active">Nhật ký</span>
+      </nav>
+    </header>
+
+    <section class="content">
+      <section class="card quick-entry">
+        <header class="card__header">
+          <h1>Ghi nhanh đường huyết</h1>
+          <button class="btn btn--ghost">Lưu</button>
+        </header>
+        <div class="quick-entry__grid">
+          <label>
+            <span>Thời gian</span>
+            <input type="time" value="06:00" />
+          </label>
+          <label>
+            <span>Đường huyết (mg/dL)</span>
+            <input type="number" value="136" />
+          </label>
+          <label>
+            <span>Ngữ cảnh</span>
+            <select>
+              <option>Trước bữa ăn</option>
+              <option>Sau bữa ăn</option>
+              <option>Trước khi ngủ</option>
+            </select>
+          </label>
+          <label>
+            <span>Ghi chú</span>
+            <input type="text" placeholder="Ví dụ: ngủ đủ giấc" />
+          </label>
+        </div>
+      </section>
+
+      <section class="card diary-actions">
+        <h2>Ghi lại trong nhật ký</h2>
+        <div class="diary-actions__grid">
+          <a class="action-card" href="../ghi-lai-bua-an/index.html">
+            <strong>Ghi lại bữa ăn</strong>
+            <span class="action-card__cta">+ Thêm bữa ăn</span>
+          </a>
+          <a class="action-card" href="../them-don-thuoc/index.html">
+            <strong>Ghi lại đơn thuốc</strong>
+            <span class="action-card__cta">+ Thêm đơn thuốc</span>
+          </a>
+          <a class="action-card" href="../nhat-ky-hoat-dong/index.html">
+            <strong>Nhật ký vận động</strong>
+            <span class="action-card__cta">+ Thêm bài tập</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="card recent">
+        <h2>Nhật ký gần đây</h2>
+        <ul class="recent__list">
+          <li>
+            <span class="recent__time">05:40</span>
+            <span class="recent__type">Đường huyết</span>
+            <span class="recent__value">118 mg/dL</span>
+            <span class="recent__note">Trước bữa sáng</span>
+          </li>
+          <li>
+            <span class="recent__time">18:15</span>
+            <span class="recent__type">Bữa ăn</span>
+            <span class="recent__value">Cơm gạo lứt + cá nướng</span>
+            <span class="recent__note">Kèm rau xanh</span>
+          </li>
+          <li>
+            <span class="recent__time">20:45</span>
+            <span class="recent__type">Vận động</span>
+            <span class="recent__value">Đi bộ 25 phút</span>
+            <span class="recent__note">Đạt mục tiêu</span>
+          </li>
+        </ul>
+      </section>
+    </section>
+  </main>
+</body>
+</html>
+

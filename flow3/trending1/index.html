@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <link href="https://fonts.googleapis.com/css?family=Calibri&display=swap" rel="stylesheet" />
+  <link href="./css/main.css" rel="stylesheet" />
+  <title>Xu hướng 1</title>
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "YOUR_CLARITY_ID");
+  </script>
+</head>
+<body>
+  <main class="screen">
+    <header class="app-bar">
+      <div class="brand">
+        <span class="brand__logo">Dia</span>
+        <span class="brand__name">GluCare</span>
+      </div>
+      <nav class="tabs">
+        <a class="tab" href="../../flow2/home-1/index.html">Trang chủ</a>
+        <span class="tab tab--active">Xu hướng</span>
+        <a class="tab" href="../history/index.html">Lịch sử</a>
+      </nav>
+    </header>
+
+    <section class="content">
+      <section class="card insight">
+        <header class="card__header">
+          <h1>Xu hướng sức khỏe</h1>
+          <button class="chip chip--accent">AI gợi ý</button>
+        </header>
+        <p class="insight__summary">
+          Lượng đường trung bình 7 ngày gần đây tăng nhẹ, bạn nên uống nhiều rau má hơn để hỗ trợ ổn định đường huyết.
+        </p>
+        <dl class="grid grid--metrics">
+          <div>
+            <dt>Trung bình</dt>
+            <dd>136 mg/dL</dd>
+          </div>
+          <div>
+            <dt>Thời gian trong ngưỡng (TIR)</dt>
+            <dd>80%</dd>
+          </div>
+          <div>
+            <dt>Dao động (SD)</dt>
+            <dd>30 mg/dL</dd>
+          </div>
+          <div>
+            <dt>HbA1c dự kiến</dt>
+            <dd>6.2%</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="card chart">
+        <header class="card__header">
+          <h2>Đường huyết trong ngày</h2>
+          <span class="caption">6:00 &rarr; 18:00</span>
+        </header>
+        <div class="chart__canvas">
+          <div class="chart__line chart__line--baseline"></div>
+          <div class="chart__line chart__line--target"></div>
+          <div class="chart__spark"></div>
+        </div>
+        <footer class="chart__legend">
+          <span>50</span>
+          <span>100</span>
+          <span>150</span>
+          <span>200</span>
+          <span>250</span>
+        </footer>
+      </section>
+    </section>
+
+    <a class="flow-button" href="../trending2/index.html">Next: Xu hướng 2</a>
+  </main>
+</body>
+</html>

@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+}
+.v14_1510 {
+  width: 430px;
+  height: 932px;
+  background: rgba(233,250,255,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  overflow: hidden;
+}
+.v169_897 {
+  width: 250px;
+  height: 250px;
+  background: url("../images/v169_897.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 55px;
+  left: 90px;
+  overflow: hidden;
+}
+.v169_926 {
+  width: 199px;
+  height: 67px;
+  background: url("../images/v169_926.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 220px;
+  left: 115px;
+  overflow: hidden;
+}
+.v14_1512 {
+  width: 143px;
+  color: rgba(71,138,166,1);
+  position: absolute;
+  top: 431px;
+  left: 143px;
+  font-family: Roboto;
+  font-weight: Regular;
+  font-size: 16px;
+  opacity: 1;
+  text-align: center;
+}
+.name {
+  color: #fff;
+}
+.v19_1570 {
+  width: 430px;
+  height: 82px;
+  background: rgba(71,138,166,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 1px;
+  overflow: hidden;
+}
+.v19_1571 {
+  width: 82px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 29px;
+  left: 173px;
+  font-family: SFU Futura;
+  font-weight: Heavy;
+  font-size: 16px;
+  opacity: 1;
+  text-align: center;
+}
+.name {
+  color: #fff;
+}
+.v146_1406 {
+  width: 111px;
+  color: rgba(71,138,166,1);
+  position: absolute;
+  top: 536px;
+  left: 159px;
+  font-family: Roboto;
+  font-weight: Regular;
+  font-size: 12px;
+  opacity: 1;
+  text-align: center;
+}
+.v147_1424 {
+  width: 23px;
+  height: 46px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 64px;
+  left: 48px;
+  overflow: hidden;
+}
+.v147_1425 {
+  width: 14px;
+  height: 24px;
+  background: rgba(233,251,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 11px;
+  left: 6px;
+}

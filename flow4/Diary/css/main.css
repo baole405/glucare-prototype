@@ -1,0 +1,246 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Calibri", "Roboto", sans-serif;
+  background: #f5f8fb;
+  color: #20364a;
+  margin: 0;
+}
+
+.screen {
+  width: 430px;
+  height: 932px;
+  margin: 24px auto;
+  background: #e9faff;
+  border-radius: 18px;
+  box-shadow: 0 12px 32px rgba(15, 63, 102, 0.08);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-bar {
+  background: #478aa6;
+  color: #fff;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand__logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.15);
+  font-weight: 700;
+}
+
+.brand__name {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.tabs {
+  display: flex;
+  gap: 12px;
+}
+
+.tab {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  padding: 6px 16px;
+  border-radius: 999px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.tab:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.tab--active {
+  background: rgba(255, 255, 255, 0.22);
+  color: #fff;
+}
+
+.content {
+  flex: 1 1 auto;
+  padding: 24px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  padding: 20px 22px;
+  box-shadow: 0 12px 24px rgba(21, 72, 109, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.card__header h1,
+.card__header h2,
+.card h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.btn {
+  border-radius: 999px;
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn--ghost {
+  background: rgba(71, 138, 166, 0.12);
+  color: #0b567d;
+}
+
+.btn--outline {
+  background: transparent;
+  border: 1px solid rgba(71, 138, 166, 0.45);
+  color: #0b567d;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn--primary {
+  background: #0b567d;
+  color: #fff;
+  box-shadow: 0 8px 18px rgba(10, 70, 108, 0.25);
+}
+
+.quick-entry__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.quick-entry__grid label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+  color: #4b667d;
+}
+
+.quick-entry__grid input,
+.quick-entry__grid select {
+  border: 1px solid rgba(71, 138, 166, 0.25);
+  border-radius: 12px;
+  padding: 10px 12px;
+  font: inherit;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.quick-entry__grid input:focus,
+.quick-entry__grid select:focus {
+  outline: none;
+  border-color: rgba(11, 86, 125, 0.6);
+  box-shadow: 0 0 0 2px rgba(11, 86, 125, 0.2);
+}
+
+.diary-actions__grid {
+  display: grid;
+  gap: 12px;
+}
+
+.action-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  background: rgba(233, 250, 255, 0.7);
+  border: 1px solid rgba(71, 138, 166, 0.18);
+  border-radius: 14px;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.action-card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 18px rgba(17, 74, 110, 0.12);
+}
+
+.action-card__cta {
+  color: #0b567d;
+  font-weight: 600;
+}
+
+.recent__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.recent__list li {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr 1.3fr 1.4fr;
+  gap: 12px;
+  align-items: center;
+  background: rgba(233, 250, 255, 0.65);
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-size: 14px;
+}
+
+.recent__time {
+  font-weight: 700;
+}
+
+.recent__type {
+  color: #0b567d;
+  font-weight: 600;
+}
+
+.recent__note {
+  color: #50697c;
+}
+
+.flow-button {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}

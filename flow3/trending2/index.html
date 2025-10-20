@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <link href="https://fonts.googleapis.com/css?family=Calibri&display=swap" rel="stylesheet" />
+  <link href="./css/main.css" rel="stylesheet" />
+  <title>Xu hướng 2</title>
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "YOUR_CLARITY_ID");
+  </script>
+</head>
+<body>
+  <main class="screen">
+    <header class="app-bar">
+      <div class="brand">
+        <span class="brand__logo">Dia</span>
+        <span class="brand__name">GluCare</span>
+      </div>
+      <nav class="tabs">
+        <a class="tab" href="../../flow2/home-1/index.html">Trang chủ</a>
+        <span class="tab tab--active">Xu hướng</span>
+        <a class="tab" href="../history/index.html">Lịch sử</a>
+      </nav>
+    </header>
+
+    <section class="content">
+      <section class="card card--form">
+        <header class="card__header">
+          <h1>Tạo báo cáo cá nhân</h1>
+          <button class="chip chip--accent">Lưu</button>
+        </header>
+        <label class="field">
+          <span class="field__label">Tiêu đề báo cáo</span>
+          <input class="field__input" type="text" placeholder="Ví dụ: Tổng hợp tuần 38" />
+        </label>
+        <label class="field">
+          <span class="field__label">Ghi chú</span>
+          <textarea class="field__textarea" rows="6" placeholder="Mô tả ngắn về tình trạng và mục tiêu sắp tới..."></textarea>
+        </label>
+        <div class="actions">
+          <button class="btn btn--outline">Xem trước</button>
+          <button class="btn btn--primary">Tạo báo cáo</button>
+        </div>
+      </section>
+
+      <section class="card quick-cards">
+        <h2>Báo cáo nhanh</h2>
+        <div class="quick-cards__grid">
+          <article>
+            <h3>Tuần 38</h3>
+            <p>Đường huyết ổn định 78% thời gian. Ghi chú chế độ ăn phù hợp.</p>
+            <button class="btn btn--ghost">Mở</button>
+          </article>
+          <article>
+            <h3>Tuần 37</h3>
+            <p>Biến động cao vào buổi tối. Đề xuất giảm tinh bột sau 19h.</p>
+            <button class="btn btn--ghost">Mở</button>
+          </article>
+        </div>
+      </section>
+    </section>
+
+    <a class="flow-button" href="../history/index.html">Next: Lịch sử</a>
+  </main>
+</body>
+</html>

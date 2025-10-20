@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+}
+.v14_1519 {
+  width: 430px;
+  height: 932px;
+  background: rgba(233,250,255,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  overflow: hidden;
+}
+.v169_899 {
+  width: 250px;
+  height: 250px;
+  background: url("../images/v169_899.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 55px;
+  left: 90px;
+  overflow: hidden;
+}
+.v169_928 {
+  width: 199px;
+  height: 67px;
+  background: url("../images/v169_928.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 220px;
+  left: 115px;
+  overflow: hidden;
+}
+.v14_1521 {
+  width: 191px;
+  color: rgba(71,138,166,1);
+  position: absolute;
+  top: 431px;
+  left: 119px;
+  font-family: Roboto;
+  font-weight: Regular;
+  font-size: 16px;
+  opacity: 1;
+  text-align: center;
+}
+.v14_1522 {
+  width: 198px;
+  color: rgba(0,0,0,0.75);
+  position: absolute;
+  top: 458px;
+  left: 116px;
+  font-family: Roboto;
+  font-weight: Medium;
+  font-size: 32px;
+  opacity: 1;
+  text-align: center;
+}
+.name {
+  color: #fff;
+}
+.v14_1529 {
+  width: 24px;
+  height: 24px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 466px;
+  left: 350px;
+  overflow: hidden;
+}
+.v14_1530 {
+  width: 20px;
+  height: 20px;
+  background: rgba(0,0,0,0.75);
+  opacity: 1;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+.v19_1572 {
+  width: 430px;
+  height: 82px;
+  background: rgba(71,138,166,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 1px;
+  overflow: hidden;
+}
+.v19_1573 {
+  width: 82px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 29px;
+  left: 173px;
+  font-family: SFU Futura;
+  font-weight: Heavy;
+  font-size: 16px;
+  opacity: 1;
+  text-align: center;
+}
+.name {
+  color: #fff;
+}
+.v147_1409 {
+  width: 111px;
+  color: rgba(71,138,166,1);
+  position: absolute;
+  top: 536px;
+  left: 159px;
+  font-family: Roboto;
+  font-weight: Regular;
+  font-size: 12px;
+  opacity: 1;
+  text-align: center;
+}
+.v147_1427 {
+  width: 23px;
+  height: 46px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 64px;
+  left: 48px;
+  overflow: hidden;
+}
+.v147_1428 {
+  width: 14px;
+  height: 24px;
+  background: rgba(233,251,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 11px;
+  left: 6px;
+}

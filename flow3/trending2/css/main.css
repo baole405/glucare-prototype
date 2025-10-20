@@ -1,0 +1,240 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Calibri", "Roboto", sans-serif;
+  background: #f5f8fb;
+  color: #20364a;
+  margin: 0;
+}
+
+.screen {
+  width: 430px;
+  height: 932px;
+  margin: 24px auto;
+  background: #e9faff;
+  border-radius: 18px;
+  box-shadow: 0 12px 32px rgba(15, 63, 102, 0.08);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-bar {
+  background: #478aa6;
+  color: #fff;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand__logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.15);
+  font-weight: 700;
+}
+
+.brand__name {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.tabs {
+  display: flex;
+  gap: 12px;
+}
+
+.tab {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  padding: 6px 16px;
+  border-radius: 999px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.tab:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.tab--active {
+  background: rgba(255, 255, 255, 0.22);
+  color: #fff;
+}
+
+.content {
+  flex: 1 1 auto;
+  padding: 24px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  padding: 20px 22px;
+  box-shadow: 0 12px 24px rgba(21, 72, 109, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.card__header h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.chip {
+  border: none;
+  border-radius: 999px;
+  padding: 6px 16px;
+  font-size: 13px;
+  cursor: pointer;
+  background: rgba(71, 138, 166, 0.16);
+  color: #0b567d;
+  font-weight: 600;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field__label {
+  font-size: 14px;
+  color: #4b667d;
+}
+
+.field__input,
+.field__textarea {
+  border: 1px solid rgba(71, 138, 166, 0.25);
+  border-radius: 12px;
+  font: inherit;
+  padding: 12px 14px;
+  background: rgba(255, 255, 255, 0.9);
+  resize: vertical;
+}
+
+.field__input:focus,
+.field__textarea:focus {
+  outline: none;
+  border-color: rgba(11, 86, 125, 0.6);
+  box-shadow: 0 0 0 2px rgba(11, 86, 125, 0.2);
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  margin-top: 4px;
+}
+
+.btn {
+  border-radius: 999px;
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn--outline {
+  background: transparent;
+  border: 1px solid rgba(71, 138, 166, 0.45);
+  color: #0b567d;
+}
+
+.btn--primary {
+  background: #0b567d;
+  color: #fff;
+  border: none;
+  box-shadow: 0 8px 18px rgba(10, 70, 108, 0.25);
+}
+
+.btn--ghost {
+  background: rgba(71, 138, 166, 0.1);
+  border: none;
+  color: #0b567d;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.quick-cards {
+  gap: 14px;
+}
+
+.quick-cards h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.quick-cards__grid {
+  display: grid;
+  gap: 12px;
+}
+
+.quick-cards__grid article {
+  border: 1px solid rgba(71, 138, 166, 0.15);
+  border-radius: 14px;
+  padding: 14px;
+  background: rgba(233, 250, 255, 0.6);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.quick-cards__grid h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.quick-cards__grid p {
+  margin: 0;
+  font-size: 14px;
+  color: #50697c;
+}
+
+.flow-button {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.2s ease;
+}
+
+.flow-button:hover {
+  background: rgba(0, 0, 0, 0.85);
+}

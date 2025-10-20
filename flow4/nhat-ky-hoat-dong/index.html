@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <link href="https://fonts.googleapis.com/css?family=Calibri&display=swap" rel="stylesheet" />
+  <link href="./css/main.css" rel="stylesheet" />
+  <title>Nhật ký vận động</title>
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "YOUR_CLARITY_ID");
+  </script>
+</head>
+<body>
+  <main class="screen">
+    <header class="app-bar">
+      <div class="brand">
+        <span class="brand__logo">Dia</span>
+        <span class="brand__name">GluCare</span>
+      </div>
+      <nav class="tabs">
+        <a class="tab" href="../Diary/index.html">Nhật ký</a>
+        <span class="tab tab--active">Vận động</span>
+      </nav>
+    </header>
+
+    <section class="content">
+      <section class="card card--form">
+        <header class="card__header">
+          <h1>Thêm hoạt động mới</h1>
+          <button class="chip chip--accent">Lưu</button>
+        </header>
+        <div class="field-row">
+          <label class="field">
+            <span class="field__label">Tên bài tập</span>
+            <input class="field__input" type="text" placeholder="Ví dụ: Đi bộ nhanh" />
+          </label>
+          <label class="field">
+            <span class="field__label">Thời lượng (phút)</span>
+            <input class="field__input" type="number" value="20" />
+          </label>
+        </div>
+        <label class="field">
+          <span class="field__label">Cường độ</span>
+          <select class="field__input">
+            <option>Nhẹ</option>
+            <option>Trung bình</option>
+            <option>Mạnh</option>
+          </select>
+        </label>
+        <label class="field">
+          <span class="field__label">Ghi chú</span>
+          <textarea class="field__textarea" rows="5" placeholder="Cảm nhận sau buổi tập, nhịp tim, năng lượng..."></textarea>
+        </label>
+        <div class="actions">
+          <a class="btn btn--outline" href="../Diary/index.html">Hủy</a>
+          <button class="btn btn--primary">Lưu hoạt động</button>
+        </div>
+      </section>
+
+      <section class="card stats">
+        <h2>Mục tiêu vận động</h2>
+        <dl class="stats__grid">
+          <div>
+            <dt>Tuần này</dt>
+            <dd>120 phút</dd>
+          </div>
+          <div>
+            <dt>Đã hoàn thành</dt>
+            <dd>85 phút</dd>
+          </div>
+          <div>
+            <dt>Ngày vận động</dt>
+            <dd>4 / 7</dd>
+          </div>
+          <div>
+            <dt>Calories ước tính</dt>
+            <dd>1.150 kcal</dd>
+          </div>
+        </dl>
+      </section>
+    </section>
+
+    <div class="flow-button flow-button--complete">Flow complete</div>
+  </main>
+</body>
+</html>
