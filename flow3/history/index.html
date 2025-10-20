@@ -15,100 +15,92 @@
 </head>
 <body>
   <main class="screen">
-    <header class="app-bar">
-      <div class="brand">
-        <span class="brand__logo">Dia</span>
-        <span class="brand__name">GluCare</span>
-      </div>
-      <nav class="tabs">
-        <a class="tab" href="../../flow2/home-1/index.html">Trang chủ</a>
-        <a class="tab" href="../trending1/index.html">Xu hướng</a>
-        <span class="tab tab--active">Lịch sử</span>
-      </nav>
+    <nav class="nav">
+      <a href="../../index.html">← Trang chủ site</a>
+      <a href="../trending1/index.html">Quay lại Xu hướng</a>
+    </nav>
+
+    <header class="hero">
+      <h1>Lịch sử đo đường huyết</h1>
+      <p>Tìm lại kết quả các lần đo, nhật ký thuốc và hoạt động đã lưu gần đây.</p>
     </header>
 
-    <section class="content">
-      <section class="card filters">
-        <header class="card__header">
-          <h1>Lịch sử đo đường huyết</h1>
-          <button class="chip chip--accent">Xuất CSV</button>
-        </header>
-        <div class="filters__row">
-          <label>
-            <span>Khoảng thời gian</span>
-            <select>
-              <option>Tuần này</option>
-              <option>Tuần trước</option>
-              <option>30 ngày gần đây</option>
-            </select>
-          </label>
-          <label>
-            <span>Nhật ký</span>
-            <select>
-              <option>Tất cả</option>
-              <option>Thuốc</option>
-              <option>Bữa ăn</option>
-              <option>Nhắc nhở</option>
-            </select>
-          </label>
-        </div>
-      </section>
-
-      <section class="card history">
-        <div class="history__header">
-          <span>Ngày</span>
-          <span>Giờ</span>
-          <span>Kết quả</span>
-          <span>Ghi chú</span>
-        </div>
-        <ul class="history__list">
-          <li>
-            <span>20/10</span>
-            <span>06:00</span>
-            <span>118 mg/dL</span>
-            <span>Trước bữa sáng</span>
-          </li>
-          <li>
-            <span>19/10</span>
-            <span>12:30</span>
-            <span>142 mg/dL</span>
-            <span>Sau bữa trưa</span>
-          </li>
-          <li>
-            <span>19/10</span>
-            <span>18:45</span>
-            <span>134 mg/dL</span>
-            <span>Đi bộ 20 phút</span>
-          </li>
-          <li>
-            <span>18/10</span>
-            <span>21:10</span>
-            <span>126 mg/dL</span>
-            <span>Trước khi ngủ</span>
-          </li>
-        </ul>
-      </section>
-
-      <section class="card reminders">
-        <h2>Nhật ký nhanh</h2>
-        <div class="reminders__grid">
-          <article>
-            <h3>Nhật ký thuốc</h3>
-            <p>Đã uống đầy đủ 5/7 ngày. Nhắc uống buổi tối lúc 20h.</p>
-          </article>
-          <article>
-            <h3>Nhật ký bữa ăn</h3>
-            <p>Thêm 2 ghi chú mới về khẩu phần tối ưu và chất xơ.</p>
-          </article>
-          <article>
-            <h3>Nhắc nhở</h3>
-            <p>Kiểm tra đường huyết lúc 6h sáng và 21h tối mỗi ngày.</p>
-          </article>
-        </div>
-      </section>
+    <section class="card filters">
+      <div class="filters__row">
+        <label>
+          <span>Khoảng thời gian</span>
+          <select>
+            <option>Tuần này</option>
+            <option>Tuần trước</option>
+            <option>30 ngày gần đây</option>
+          </select>
+        </label>
+        <label>
+          <span>Nhật ký</span>
+          <select>
+            <option>Tất cả</option>
+            <option>Thuốc</option>
+            <option>Bữa ăn</option>
+            <option>Nhắc nhở</option>
+          </select>
+        </label>
+      </div>
     </section>
 
-    <div class="flow-button flow-button--complete">Flow complete</div>
+    <section class="card">
+      <div class="history__header">
+        <span>Ngày</span>
+        <span>Giờ</span>
+        <span>Kết quả</span>
+        <span>Ghi chú</span>
+      </div>
+      <ul class="history__list">
+        <li>
+          <span>20/10</span>
+          <span>06:00</span>
+          <span>118 mg/dL</span>
+          <span>Trước bữa sáng</span>
+        </li>
+        <li>
+          <span>19/10</span>
+          <span>12:30</span>
+          <span>142 mg/dL</span>
+          <span>Sau bữa trưa</span>
+        </li>
+        <li>
+          <span>19/10</span>
+          <span>18:45</span>
+          <span>134 mg/dL</span>
+          <span>Đi bộ 20 phút</span>
+        </li>
+        <li>
+          <span>18/10</span>
+          <span>21:10</span>
+          <span>126 mg/dL</span>
+          <span>Trước khi ngủ</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="card reminders">
+      <h2>Nhật ký nhanh</h2>
+      <div class="reminders__grid">
+        <article>
+          <h3>Nhật ký thuốc</h3>
+          <p>Đã uống đầy đủ 5/7 ngày. Nhắc uống buổi tối lúc 20h.</p>
+        </article>
+        <article>
+          <h3>Nhật ký bữa ăn</h3>
+          <p>Thêm 2 ghi chú mới về khẩu phần tối ưu và chất xơ.</p>
+        </article>
+        <article>
+          <h3>Nhắc nhở</h3>
+          <p>Kiểm tra đường huyết lúc 6h sáng và 21h tối mỗi ngày.</p>
+        </article>
+      </div>
+    </section>
+
+    <a class="flow-button flow-button--complete" href="../../flow4/index.html">Tiếp tục tới Nhật ký cá nhân</a>
   </main>
 </body>
 </html>

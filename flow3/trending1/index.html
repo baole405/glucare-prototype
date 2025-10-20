@@ -15,68 +15,40 @@
 </head>
 <body>
   <main class="screen">
-    <header class="app-bar">
-      <div class="brand">
-        <span class="brand__logo">Dia</span>
-        <span class="brand__name">GluCare</span>
-      </div>
-      <nav class="tabs">
-        <a class="tab" href="../../flow2/home-1/index.html">Trang chủ</a>
-        <span class="tab tab--active">Xu hướng</span>
-        <a class="tab" href="../history/index.html">Lịch sử</a>
-      </nav>
+    <nav class="nav">
+      <a href="../../index.html">← Trang chủ site</a>
+      <a href="../../flow2/home-1/index.html">Quay lại Trang chủ</a>
+    </nav>
+
+    <header class="hero">
+      <h1>Xu hướng sức khỏe</h1>
+      <p>Tổng hợp dữ liệu đường huyết và hoạt động trong 7 ngày gần đây. AI Coach đưa ra gợi ý điều chỉnh.</p>
     </header>
 
-    <section class="content">
-      <section class="card insight">
-        <header class="card__header">
-          <h1>Xu hướng sức khỏe</h1>
-          <button class="chip chip--accent">AI gợi ý</button>
-        </header>
-        <p class="insight__summary">
-          Đường huyết trung bình 7 ngày gần đây tăng nhẹ, bạn nên uống nhiều rau má hơn để hỗ trợ ổn định.
-        </p>
-        <dl class="grid grid--metrics">
-          <div>
-            <dt>Trung bình</dt>
-            <dd>136 mg/dL</dd>
-          </div>
-          <div>
-            <dt>Thời gian trong ngưỡng (TIR)</dt>
-            <dd>80%</dd>
-          </div>
-          <div>
-            <dt>Dao động (SD)</dt>
-            <dd>30 mg/dL</dd>
-          </div>
-          <div>
-            <dt>HbA1c dự kiến</dt>
-            <dd>6.2%</dd>
-          </div>
-        </dl>
-      </section>
-
-      <section class="card chart">
-        <header class="card__header">
-          <h2>Đường huyết trong ngày</h2>
-          <span class="caption">6:00 → 18:00</span>
-        </header>
-        <div class="chart__canvas">
-          <div class="chart__line chart__line--baseline"></div>
-          <div class="chart__line chart__line--target"></div>
-          <div class="chart__spark"></div>
-        </div>
-        <footer class="chart__legend">
-          <span>50</span>
-          <span>100</span>
-          <span>150</span>
-          <span>200</span>
-          <span>250</span>
-        </footer>
-      </section>
+    <section class="card">
+      <span class="chip">AI gợi ý</span>
+      <h2>Kết luận chính</h2>
+      <p>Đường huyết trung bình tăng nhẹ sau bữa tối. Bạn nên uống thêm rau má và đi bộ 20 phút để giữ ổn định.</p>
+      <div class="metric-grid">
+        <article class="metric"><span>Trung bình</span><strong>136 mg/dL</strong></article>
+        <article class="metric"><span>Thời gian trong ngưỡng (TIR)</span><strong>80%</strong></article>
+        <article class="metric"><span>Dao động (SD)</span><strong>30 mg/dL</strong></article>
+        <article class="metric"><span>HbA1c dự kiến</span><strong>6.2%</strong></article>
+      </div>
     </section>
 
-    <a class="flow-button" href="../trending2/index.html">Next: Xu hướng 2</a>
+    <section class="card">
+      <h2>Đường huyết trong ngày</h2>
+      <div class="chart-shell">
+        <div class="chart-line"></div>
+      </div>
+      <div class="chart-ticks">
+        <span>6AM</span>
+        <span>12PM</span>
+        <span>18PM</span>
+      </div>
+      <a class="primary-btn" href="../trending2/index.html">Báo cáo chi tiết</a>
+    </section>
   </main>
 </body>
 </html>

@@ -15,56 +15,47 @@
 </head>
 <body>
   <main class="screen">
-    <header class="app-bar">
-      <div class="brand">
-        <span class="brand__logo">Dia</span>
-        <span class="brand__name">GluCare</span>
-      </div>
-      <nav class="tabs">
-        <a class="tab" href="../../flow2/home-1/index.html">Trang chủ</a>
-        <span class="tab tab--active">Xu hướng</span>
-        <a class="tab" href="../history/index.html">Lịch sử</a>
-      </nav>
+    <nav class="nav">
+      <a href="../../index.html">← Trang chủ site</a>
+      <a href="../../flow2/home-1/index.html">Quay lại Trang chủ</a>
+    </nav>
+
+    <header class="hero">
+      <h1>Tạo báo cáo cá nhân</h1>
+      <p>Bạn có thể lưu lại báo cáo nhanh và xuất cho bác sĩ theo dõi.</p>
     </header>
 
-    <section class="content">
-      <section class="card card--form">
-        <header class="card__header">
-          <h1>Tạo báo cáo cá nhân</h1>
-          <button class="chip chip--accent">Lưu</button>
-        </header>
-        <label class="field">
-          <span class="field__label">Tiêu đề báo cáo</span>
-          <input class="field__input" type="text" placeholder="Ví dụ: Tổng hợp tuần 38" />
-        </label>
-        <label class="field">
-          <span class="field__label">Ghi chú</span>
-          <textarea class="field__textarea" rows="6" placeholder="Mô tả ngắn về tình trạng và mục tiêu sắp tới..."></textarea>
-        </label>
-        <div class="actions">
-          <button class="btn btn--outline">Xem trước</button>
-          <button class="btn btn--primary">Tạo báo cáo</button>
-        </div>
-      </section>
-
-      <section class="card quick-cards">
-        <h2>Báo cáo nhanh</h2>
-        <div class="quick-cards__grid">
-          <article>
-            <h3>Tuần 38</h3>
-            <p>Đường huyết ổn định 78% thời gian. Ghi chú chế độ ăn phù hợp.</p>
-            <button class="btn btn--ghost">Mở</button>
-          </article>
-          <article>
-            <h3>Tuần 37</h3>
-            <p>Biến động cao vào buổi tối. Đề xuất giảm tinh bột sau 19h.</p>
-            <button class="btn btn--ghost">Mở</button>
-          </article>
-        </div>
-      </section>
+    <section class="card card--form">
+      <label class="field">
+        <span class="field__label">Tiêu đề báo cáo</span>
+        <input class="field__input" type="text" placeholder="Ví dụ: Tổng hợp tuần 38" />
+      </label>
+      <label class="field">
+        <span class="field__label">Ghi chú</span>
+        <textarea class="field__textarea" rows="6" placeholder="Mô tả ngắn về tình trạng và mục tiêu sắp tới..."></textarea>
+      </label>
+      <div class="actions">
+        <button class="btn btn--outline">Xem trước</button>
+        <button class="btn btn--primary">Tạo báo cáo</button>
+      </div>
     </section>
 
-    <a class="flow-button" href="../history/index.html">Next: Lịch sử</a>
+    <section class="card quick-cards">
+      <h2>Báo cáo nhanh</h2>
+      <div class="quick-cards__grid">
+        <article>
+          <h3>Tuần 38</h3>
+          <p>Đường huyết ổn định 78% thời gian. Ghi chú chế độ ăn phù hợp.</p>
+          <button class="btn btn--ghost">Mở</button>
+        </article>
+        <article>
+          <h3>Tuần 37</h3>
+          <p>Biến động cao vào buổi tối. Đề xuất giảm tinh bột sau 19h.</p>
+          <button class="btn btn--ghost">Mở</button>
+        </article>
+      </div>
+      <a class="primary-btn" href="../history/index.html">Xem lịch sử đo</a>
+    </section>
   </main>
 </body>
 </html>
