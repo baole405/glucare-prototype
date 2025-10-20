@@ -31,7 +31,22 @@
       <div class="bubble bubble--ai">Đã sẵn sàng. Tôi sẽ đề xuất menu phù hợp ngay ở bước kế tiếp.</div>
     </section>
 
-    <a class="primary-btn" href="../home-5/index.html">Bắt đầu trò chuyện</a>
+    <section class="card preferences">
+      <form action="../home-5/index.html" method="get">
+        <fieldset>
+          <legend>Tùy chỉnh gợi ý</legend>
+          <label class="pref-option">
+            <input type="checkbox" name="rememberMeals" checked />
+            Ghi nhớ khẩu phần ưa thích cho lần sau
+          </label>
+          <label class="pref-option">
+            <input type="checkbox" name="sendSummary" />
+            Gửi tóm tắt cuộc trò chuyện qua email
+          </label>
+        </fieldset>
+        <button class="primary-btn" type="submit">Bắt đầu trò chuyện</button>
+      </form>
+    </section>
   </main>
 </body>
 </html>

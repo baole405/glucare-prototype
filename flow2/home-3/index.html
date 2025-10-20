@@ -27,16 +27,18 @@
 
     <section class="card conversation">
       <div class="bubble bubble--bot">Chào bạn, tôi có thể giúp gì cho bạn hôm nay?</div>
-      <div class="bubble bubble--user">Đường huyết chiều nay hơi cao, tôi nên ăn gì buổi tối?</div>
+      <div class="bubble bubble--user">Đường huyết chiều nay hơi cao, tôi nên ăn gì bữa tối?</div>
       <div class="bubble bubble--bot">Bạn nên ưu tiên rau xanh, hạn chế tinh bột nhanh và kết hợp đi bộ 20 phút sau bữa.</div>
     </section>
 
     <section class="card">
-      <div class="field">
-        <label for="question">Đặt câu hỏi tiếp theo</label>
-        <textarea id="question" placeholder="Ví dụ: Tôi có thể thay cơm bằng loại tinh bột nào?"></textarea>
-      </div>
-      <a class="primary-btn" href="../home-4/index.html">Gửi câu hỏi cho AI</a>
+      <form class="ask-form" action="../home-4/index.html" method="get">
+        <div class="field">
+          <label for="question">Đặt câu hỏi tiếp theo</label>
+          <textarea id="question" name="question" placeholder="Ví dụ: Tôi có thể thay cơm bằng loại tinh bột nào?"></textarea>
+        </div>
+        <button class="primary-btn" type="submit">Gửi câu hỏi cho AI</button>
+      </form>
     </section>
   </main>
 </body>

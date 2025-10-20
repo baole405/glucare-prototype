@@ -7,7 +7,7 @@ body {
 .v19_1644 {
   width: 430px;
   height: 932px;
-  background: rgba(233,250,255,1);
+  background: rgba(233, 250, 255, 1);
   opacity: 1;
   position: absolute;
   top: 0px;
@@ -47,7 +47,7 @@ body {
 .v19_1658 {
   width: 430px;
   height: 82px;
-  background: rgba(71,138,166,1);
+  background: rgba(71, 138, 166, 1);
   opacity: 1;
   position: absolute;
   top: 0px;
@@ -56,7 +56,7 @@ body {
 }
 .v19_1659 {
   width: 174px;
-  color: rgba(255,255,255,1);
+  color: rgba(255, 255, 255, 1);
   position: absolute;
   top: 29px;
   left: 128px;
@@ -71,7 +71,7 @@ body {
 }
 .v19_1750 {
   width: 114px;
-  color: rgba(71,138,166,1);
+  color: rgba(71, 138, 166, 1);
   position: absolute;
   top: 401px;
   left: 157px;
@@ -83,7 +83,7 @@ body {
 }
 .v19_1751 {
   width: 254px;
-  color: rgba(71,138,166,1);
+  color: rgba(71, 138, 166, 1);
   position: absolute;
   top: 454px;
   left: 89px;
@@ -92,4 +92,54 @@ body {
   font-size: 36px;
   opacity: 1;
   text-align: center;
+}
+
+.screen {
+  width: min(430px, 100%);
+  background: #e9faff;
+  border-radius: 24px;
+  box-shadow: 0 18px 36px rgba(17, 73, 110, 0.15);
+  padding: 32px 24px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+header.hero h1 {
+  margin: 0 0 8px;
+  font-size: 24px;
+}
+
+header.hero p {
+  margin: 0;
+  color: #527089;
+  line-height: 1.5;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 20px 22px;
+  box-shadow: 0 14px 32px rgba(11, 86, 125, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.primary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border-radius: 999px;
+  background: #0b567d;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.2px;
+}
+
+.primary-btn:hover {
+  background: #094362;
 }

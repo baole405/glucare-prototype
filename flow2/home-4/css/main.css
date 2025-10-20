@@ -83,6 +83,41 @@ header.hero p {
   align-self: flex-end;
 }
 
+.preferences form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.preferences fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.preferences legend {
+  font-size: 14px;
+  font-weight: 600;
+  color: #304e63;
+}
+
+.pref-option {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #4b667d;
+}
+
+.pref-option input {
+  width: 18px;
+  height: 18px;
+  accent-color: #0b567d;
+}
+
 .primary-btn {
   align-self: flex-start;
   display: inline-flex;
@@ -94,8 +129,15 @@ header.hero p {
   color: #fff;
   text-decoration: none;
   font-weight: 600;
+  border: none;
+  cursor: pointer;
 }
 
 .primary-btn:hover {
   background: #094362;
+}
+
+.primary-btn:focus-visible {
+  outline: 2px solid rgba(11, 86, 125, 0.45);
+  outline-offset: 2px;
 }

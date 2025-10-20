@@ -142,8 +142,59 @@ header.hero p {
   font-weight: 600;
 }
 
+.actions-list a span {
+  font-size: 18px;
+  line-height: 1;
+}
+
 .actions-list a:hover {
   background: #d9f1ff;
+}
+
+.quick-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.quick-option {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #4b667d;
+}
+
+.quick-option input {
+  width: 18px;
+  height: 18px;
+  accent-color: #0b567d;
+}
+
+.secondary-btn {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border-radius: 999px;
+  border: 1px solid rgba(11, 86, 125, 0.35);
+  background: transparent;
+  color: #0b567d;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.secondary-btn:hover {
+  background: rgba(11, 86, 125, 0.08);
+}
+
+.secondary-btn:focus-visible {
+  outline: 2px solid rgba(11, 86, 125, 0.45);
+  outline-offset: 2px;
 }
 
 .primary-btn {

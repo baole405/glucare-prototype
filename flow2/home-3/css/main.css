@@ -59,6 +59,12 @@ header.hero p {
   gap: 16px;
 }
 
+.ask-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .conversation {
   display: flex;
   flex-direction: column;
@@ -120,10 +126,17 @@ header.hero p {
   border-radius: 999px;
   background: #0b567d;
   color: #fff;
-  text-decoration: none;
   font-weight: 600;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
 }
 
 .primary-btn:hover {
   background: #094362;
+}
+
+.primary-btn:focus-visible {
+  outline: 2px solid rgba(11, 86, 125, 0.45);
+  outline-offset: 2px;
 }

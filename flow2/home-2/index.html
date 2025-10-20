@@ -32,7 +32,7 @@
       <div class="ticks">
         <span>6AM</span>
         <span>12PM</span>
-        <span>18PM</span>
+        <span>6PM</span>
       </div>
       <div class="stat-grid">
         <article class="stat">
@@ -57,10 +57,21 @@
     <section class="card">
       <h2>Thao tác nhanh</h2>
       <div class="actions-list">
-        <a href="../home-3/index.html">Chỉnh sửa báo cáo <span>→</span></a>
-        <a href="../home-3/index.html">Thêm vào nhật ký <span>→</span></a>
-        <a href="../home-3/index.html">Chia sẻ cho bác sĩ <span>→</span></a>
+        <a href="../home-3/index.html">Chỉnh sửa báo cáo <span aria-hidden="true">&rsaquo;</span></a>
+        <a href="../home-3/index.html">Thêm vào nhật ký <span aria-hidden="true">&rsaquo;</span></a>
+        <a href="../home-3/index.html">Chia sẻ cho bác sĩ <span aria-hidden="true">&rsaquo;</span></a>
       </div>
+      <form class="quick-actions" action="../home-3/index.html" method="get">
+        <label class="quick-option">
+          <input type="checkbox" name="autoShare" checked />
+          Gửi báo cáo tự động cho bác sĩ
+        </label>
+        <label class="quick-option">
+          <input type="checkbox" name="logReminder" />
+          Nhắc tôi ghi nhận bữa ăn tối nay
+        </label>
+        <button class="secondary-btn" type="submit">Lưu thao tác</button>
+      </form>
     </section>
   </main>
 </body>
