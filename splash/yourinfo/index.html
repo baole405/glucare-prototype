@@ -1,63 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
   <meta charset="UTF-8" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=SFU+Futura&display=swap" rel="stylesheet" />
-  <link href="./css/main.css" rel="stylesheet" />
-  <title>Hồ sơ bệnh án</title>
-  <style>
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #f5f8fb;
-      font-family: "Roboto", "SFU Futura", sans-serif;
-    }
-
-    .flow-wrapper {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-    }
-
-    .flow-wrapper > div {
-      position: relative;
-    }
-
-    .flow-nav,
-    .flow-nav:visited {
-      position: absolute;
-      bottom: 24px;
-      right: 24px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 12px 20px;
-      background: rgba(0, 0, 0, 0.75);
-      color: #fff;
-      text-decoration: none;
-      border-radius: 999px;
-      font-size: 14px;
-      transition: background 0.2s ease;
-    }
-
-    .flow-nav:hover {
-      background: rgba(0, 0, 0, 0.85);
-    }
-
-    .flow-nav.flow-nav-complete {
-      background: rgba(34, 197, 94, 0.85);
-      cursor: default;
-    }
-
-    .flow-nav.flow-nav-complete:hover {
-      background: rgba(34, 197, 94, 0.85);
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css?family=Calibri&display=swap" rel="stylesheet" />
+  <link href="../flow-ui.css" rel="stylesheet" />
+  <title>Thiết lập hồ sơ</title>
   <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -65,25 +12,54 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "YOUR_CLARITY_ID");
   </script>
+  <style>
+    .radio-group {
+      display: flex;
+      gap: 16px;
+    }
+
+    .radio-group label {
+      font-size: 14px;
+      color: var(--text-muted);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+  </style>
 </head>
 <body>
-  <main class="flow-wrapper">
-    <div class="v19_1627">
-      <div class="v19_1631"></div>
-      <span class="v19_1632">Thiết lập hồ sơ bệnh án</span>
-      <div class="name"></div>
-      <span class="v19_1669">Tên của bạn</span>
-      <span class="v19_1709">Giới tính</span>
-      <span class="v19_1720">Ngày sinh</span>
-      <span class="v19_1708">Nhập họ tên đầy đủ của bạn...</span>
-      <span class="v19_1718">Nam</span>
-      <span class="v19_1719">Nữ</span>
-      <div class="v19_1707"></div>
-      <div class="v19_1722"></div>
-      <div class="v19_1715"></div>
-      <div class="v19_1717"></div>
-      <span class="v19_1721">Nhập ngày sinh dd/mm/yyyy</span>
-      <a class="flow-nav" href="../yourinfo-click/index.html">Next: Xác nhận thông tin</a>
+  <main class="screen">
+    <header class="app-bar">
+      <a class="app-bar__back" href="../login-v4/index.html">←</a>
+      <span>Thiết lập hồ sơ</span>
+      <span class="app-bar__brand">GluCare</span>
+    </header>
+
+    <div class="content">
+      <section>
+        <h1>Thông tin cá nhân</h1>
+        <p>Điền các thông tin cơ bản để chúng tôi cá nhân hóa trải nghiệm của bạn.</p>
+      </section>
+
+      <form class="form" onsubmit="event.preventDefault(); location.href='../yourinfo-click/index.html';">
+        <div class="form-field">
+          <label for="full-name">Họ và tên</label>
+          <input id="full-name" name="full-name" type="text" placeholder="Nguyễn Văn An" required />
+        </div>
+        <div class="form-field">
+          <label>Giới tính</label>
+          <div class="radio-group">
+            <label><input type="radio" name="gender" value="male" checked /> Nam</label>
+            <label><input type="radio" name="gender" value="female" /> Nữ</label>
+            <label><input type="radio" name="gender" value="other" /> Khác</label>
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="birthday">Ngày sinh</label>
+          <input id="birthday" name="birthday" type="date" value="2000-01-01" required />
+        </div>
+        <button class="primary-btn" type="submit">Lưu hồ sơ</button>
+      </form>
     </div>
   </main>
 </body>

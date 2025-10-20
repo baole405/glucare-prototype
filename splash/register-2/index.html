@@ -1,63 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
   <meta charset="UTF-8" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=SFU+Futura&display=swap" rel="stylesheet" />
-  <link href="./css/main.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Calibri&display=swap" rel="stylesheet" />
+  <link href="../flow-ui.css" rel="stylesheet" />
   <title>Đăng ký 2</title>
-  <style>
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #f5f8fb;
-      font-family: "Roboto", "SFU Futura", sans-serif;
-    }
-
-    .flow-wrapper {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-    }
-
-    .flow-wrapper > div {
-      position: relative;
-    }
-
-    .flow-nav,
-    .flow-nav:visited {
-      position: absolute;
-      bottom: 24px;
-      right: 24px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 12px 20px;
-      background: rgba(0, 0, 0, 0.75);
-      color: #fff;
-      text-decoration: none;
-      border-radius: 999px;
-      font-size: 14px;
-      transition: background 0.2s ease;
-    }
-
-    .flow-nav:hover {
-      background: rgba(0, 0, 0, 0.85);
-    }
-
-    .flow-nav.flow-nav-complete {
-      background: rgba(34, 197, 94, 0.85);
-      cursor: default;
-    }
-
-    .flow-nav.flow-nav-complete:hover {
-      background: rgba(34, 197, 94, 0.85);
-    }
-  </style>
   <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -67,28 +14,30 @@
   </script>
 </head>
 <body>
-  <main class="flow-wrapper">
-    <div class="v1_3215">
-      <div class="v169_891"></div>
-      <div class="v169_922"></div>
-      <span class="v1_3217">Nhập số điện thoại/email</span>
-      <span class="v1_3218">0999 123 456</span>
-      <span class="v1_3219">Tôi đã đọc và đồng ý Điều khoản sử dụng</span>
-      <div class="name"></div>
-      <div class="v1_3221">
-        <div class="v1_3222"></div>
-        <div class="v1_3223"></div>
-      </div>
-      <div class="v1_3225">
-        <div class="v1_3226"></div>
-      </div>
-      <div class="v19_1565"></div>
-      <span class="v19_1566">Đăng ký tài khoản mới</span>
-      <div class="name"></div>
-      <div class="v147_1415">
-        <div class="v147_1416"></div>
-      </div>
-      <a class="flow-nav" href="../register-3/index.html">Next: Đăng ký 3</a>
+  <main class="screen">
+    <header class="app-bar">
+      <a class="app-bar__back" href="../register/index.html">←</a>
+      <span>Xác nhận thông tin</span>
+      <span class="app-bar__brand">GluCare</span>
+    </header>
+
+    <div class="content">
+      <section>
+        <h1>Thông tin liên hệ</h1>
+        <p>Nhập email để sử dụng khi khôi phục tài khoản.</p>
+      </section>
+
+      <form class="form" onsubmit="event.preventDefault(); location.href='../register-3/index.html';">
+        <div class="form-field">
+          <label for="reg-email">Email</label>
+          <input id="reg-email" name="email" type="email" placeholder="me@example.com" autocomplete="email" required />
+        </div>
+        <label class="checkbox">
+          <input type="checkbox" required />
+          <span>Tôi đồng ý với Điều khoản sử dụng và Chính sách bảo mật.</span>
+        </label>
+        <button class="primary-btn" type="submit">Tiếp tục</button>
+      </form>
     </div>
   </main>
 </body>

@@ -2,62 +2,9 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=SFU+Futura&display=swap" rel="stylesheet" />
-  <link href="./css/main.css" rel="stylesheet" />
-  <title>Splash</title>
-  <style>
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #f5f8fb;
-      font-family: "Roboto", "SFU Futura", sans-serif;
-    }
-
-    .flow-wrapper {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-    }
-
-    .flow-wrapper > div {
-      position: relative;
-    }
-
-    .flow-nav,
-    .flow-nav:visited {
-      position: absolute;
-      bottom: 24px;
-      right: 24px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 12px 20px;
-      background: rgba(0, 0, 0, 0.75);
-      color: #fff;
-      text-decoration: none;
-      border-radius: 999px;
-      font-size: 14px;
-      transition: background 0.2s ease;
-    }
-
-    .flow-nav:hover {
-      background: rgba(0, 0, 0, 0.85);
-    }
-
-    .flow-nav.flow-nav-complete {
-      background: rgba(34, 197, 94, 0.85);
-      cursor: default;
-    }
-
-    .flow-nav.flow-nav-complete:hover {
-      background: rgba(34, 197, 94, 0.85);
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css?family=Calibri&display=swap" rel="stylesheet" />
+  <link href="./flow-ui.css" rel="stylesheet" />
+  <title>GluCare</title>
   <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -65,13 +12,32 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "YOUR_CLARITY_ID");
   </script>
+  <style>
+    .welcome {
+      align-items: center;
+      text-align: center;
+      gap: 24px;
+    }
+
+    .welcome img {
+      width: 120px;
+      margin: 12px auto;
+    }
+  </style>
 </head>
 <body>
-  <main class="flow-wrapper">
-    <div class="v1_3172">
-      <div class="v169_885"></div>
-      <div class="v169_942"></div>
-      <a class="flow-nav" href="./login/index.html">Next: Đăng nhập</a>
+  <main class="screen welcome">
+    <header class="app-bar">
+      <strong>GluCare</strong>
+      <span class="app-bar__brand">Prototype</span>
+    </header>
+    <div class="content" style="gap:32px;">
+      <section>
+        <img src="./images/v169_942.png" alt="Biểu tượng GluCare" />
+        <h1>Chào mừng đến với GluCare</h1>
+        <p>Ứng dụng theo dõi đường huyết và chăm sóc dinh dưỡng cá nhân.</p>
+      </section>
+      <a class="primary-btn" href="./login/index.html">Bắt đầu trải nghiệm</a>
     </div>
   </main>
 </body>
