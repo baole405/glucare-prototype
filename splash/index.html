@@ -2,9 +2,68 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8" />
-  <link href="https://fonts.googleapis.com/css?family=Calibri&display=swap" rel="stylesheet" />
-  <link href="./flow-ui.css" rel="stylesheet" />
-  <title>GluCare</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=SFU+Futura&display=swap" rel="stylesheet" />
+  <link href="./css/main.css" rel="stylesheet" />
+  <title>Splash</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f5f8fb;
+      font-family: "Roboto", "SFU Futura", sans-serif;
+    }
+
+    .flow-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .flow-wrapper > div {
+      position: relative;
+    }
+
+    .cta-row {
+      position: absolute;
+      bottom: 120px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 16px;
+    }
+
+    .cta-row a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 22px;
+      border-radius: 999px;
+      font-family: "Calibri", sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      text-decoration: none;
+      box-shadow: 0 10px 18px rgba(13, 68, 102, 0.18);
+    }
+
+    .cta-login {
+      background: #3f7d9c;
+      color: #fff;
+    }
+
+    .cta-register {
+      background: #56c6d1;
+      color: #0b4f63;
+    }
+
+    .cta-row a:hover {
+      transform: translateY(-2px);
+    }
+  </style>
   <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -12,46 +71,15 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "YOUR_CLARITY_ID");
   </script>
-  <style>
-    .landing {
-      align-items: center;
-      text-align: center;
-      gap: 32px;
-    }
-
-    .logo-wrapper {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 16px;
-      margin-top: 32px;
-    }
-
-    .logo-wrapper img {
-      width: 160px;
-    }
-
-    .logo-wrapper h1 {
-      margin: 0;
-      font-size: 32px;
-      letter-spacing: 1px;
-    }
-  </style>
 </head>
 <body>
-  <main class="screen landing">
-    <header class="app-bar">
-      <strong>GluCare</strong>
-      <span class="app-bar__brand">Prototype</span>
-    </header>
-    <div class="content" style="gap:32px; align-items:center;">
-      <section class="logo-wrapper">
-        <img src="./images/v169_942.png" alt="Biểu tượng GluCare" />
-        <h1>GluCare</h1>
-      </section>
-      <div class="button-row">
-        <a class="primary-btn" href="./login/index.html">Đăng nhập</a>
-        <a class="secondary-btn" href="./register/index.html">Đăng ký</a>
+  <main class="flow-wrapper">
+    <div class="v1_3172">
+      <div class="v169_885"></div>
+      <div class="v169_942"></div>
+      <div class="cta-row">
+        <a class="cta-login" href="./login/index.html">Đăng nhập</a>
+        <a class="cta-register" href="./register/index.html">Đăng ký</a>
       </div>
     </div>
   </main>
