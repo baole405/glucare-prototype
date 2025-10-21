@@ -19,23 +19,23 @@ body {
   background: #e9faff;
   border-radius: 24px;
   box-shadow: 0 18px 36px rgba(17, 73, 110, 0.15);
-  padding: 32px 24px 40px;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  height: 932px;
+  position: relative;
+}
+
+.screen > :not(.bottom-nav) {
+  padding: 32px 24px 0;
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 14px;
-}
-
-.nav a {
-  text-decoration: none;
-  color: #0b567d;
-  font-weight: 600;
+  display: none;
 }
 
 header.hero h1 {
@@ -90,7 +90,11 @@ header.hero p {
 
 .chart-shell {
   height: 160px;
-  background: linear-gradient(180deg, rgba(233, 250, 255, 0.6), rgba(212, 242, 255, 0.9));
+  background: linear-gradient(
+    180deg,
+    rgba(233, 250, 255, 0.6),
+    rgba(212, 242, 255, 0.9)
+  );
   border-radius: 16px;
   position: relative;
   overflow: hidden;
@@ -105,8 +109,12 @@ header.hero p {
   border-top: 1px dashed rgba(11, 86, 125, 0.25);
 }
 
-.chart-shell::before { top: 45%; }
-.chart-shell::after { top: 70%; }
+.chart-shell::before {
+  top: 45%;
+}
+.chart-shell::after {
+  top: 70%;
+}
 
 .chart-line {
   position: absolute;
@@ -115,8 +123,14 @@ header.hero p {
   top: 20px;
   bottom: 20px;
   border-radius: 10px;
-  background: linear-gradient(180deg, rgba(11, 86, 125, 0.56), rgba(11, 86, 125, 0.2));
-  clip-path: path("M0,120 C60,40 120,90 180,60 C240,120 300,80 360,115 L360,140 L0,140 Z");
+  background: linear-gradient(
+    180deg,
+    rgba(11, 86, 125, 0.56),
+    rgba(11, 86, 125, 0.2)
+  );
+  clip-path: path(
+    "M0,120 C60,40 120,90 180,60 C240,120 300,80 360,115 L360,140 L0,140 Z"
+  );
 }
 
 .chart-ticks {
@@ -141,4 +155,58 @@ header.hero p {
 
 .primary-btn:hover {
   background: #094362;
+}
+
+.bottom-nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #56c6d1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 12px 0;
+  border-radius: 0 0 24px 24px;
+  gap: 0;
+}
+
+.bottom-nav a,
+.bottom-nav button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 12px;
+  font-weight: 600;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px 12px;
+  transition: all 0.2s ease;
+  flex: 1;
+}
+
+.bottom-nav a:hover,
+.bottom-nav button:hover {
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.bottom-nav a.active {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+}
+
+.bottom-nav svg {
+  width: 24px;
+  height: 24px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }

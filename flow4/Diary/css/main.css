@@ -54,25 +54,7 @@ body {
 }
 
 .tabs {
-  display: flex;
-  gap: 12px;
-}
-
-.tab {
-  color: rgba(255, 255, 255, 0.8);
-  text-decoration: none;
-  padding: 6px 16px;
-  border-radius: 999px;
-  transition: background 0.2s ease, color 0.2s ease;
-}
-
-.tab:hover {
-  background: rgba(255, 255, 255, 0.18);
-}
-
-.tab--active {
-  background: rgba(255, 255, 255, 0.22);
-  color: #fff;
+  display: none;
 }
 
 .content {
@@ -243,4 +225,58 @@ body {
   color: #fff;
   text-decoration: none;
   font-size: 14px;
+}
+
+.bottom-nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #56c6d1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 12px 0;
+  border-radius: 0 0 18px 18px;
+  gap: 0;
+}
+
+.bottom-nav a,
+.bottom-nav button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 12px;
+  font-weight: 600;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px 12px;
+  transition: all 0.2s ease;
+  flex: 1;
+}
+
+.bottom-nav a:hover,
+.bottom-nav button:hover {
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.bottom-nav a.active {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+}
+
+.bottom-nav svg {
+  width: 24px;
+  height: 24px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }

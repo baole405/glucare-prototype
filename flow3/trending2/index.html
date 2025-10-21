@@ -1,61 +1,120 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-  <meta charset="UTF-8" />
-  <link href="https://fonts.googleapis.com/css?family=Calibri&display=swap" rel="stylesheet" />
-  <link href="./css/main.css" rel="stylesheet" />
-  <title>Xu hướng 2</title>
-  <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "YOUR_CLARITY_ID");
-  </script>
-</head>
-<body>
-  <main class="screen">
-    <nav class="nav">
-      <a href="../../index.html">← Trang chủ site</a>
-      <a href="../../flow2/home-1/index.html">Quay lại Trang chủ</a>
-    </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Calibri&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./css/main.css" rel="stylesheet" />
+    <title>Xu hướng 2</title>
+    <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+        c[a] =
+          c[a] ||
+          function () {
+            (c[a].q = c[a].q || []).push(arguments);
+          };
+        t = l.createElement(r);
+        t.async = 1;
+        t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "YOUR_CLARITY_ID");
+    </script>
+  </head>
+  <body>
+    <main class="screen">
+      <div class="screen-content">
+        <header class="hero">
+          <h1>Tạo báo cáo cá nhân</h1>
+          <p>Bạn có thể lưu lại báo cáo nhanh và xuất cho bác sĩ theo dõi.</p>
+        </header>
 
-    <header class="hero">
-      <h1>Tạo báo cáo cá nhân</h1>
-      <p>Bạn có thể lưu lại báo cáo nhanh và xuất cho bác sĩ theo dõi.</p>
-    </header>
+        <section class="card card--form">
+          <label class="field">
+            <span class="field__label">Tiêu đề báo cáo</span>
+            <input
+              class="field__input"
+              type="text"
+              placeholder="Ví dụ: Tổng hợp tuần 38"
+            />
+          </label>
+          <label class="field">
+            <span class="field__label">Ghi chú</span>
+            <textarea
+              class="field__textarea"
+              rows="6"
+              placeholder="Mô tả ngắn về tình trạng và mục tiêu sắp tới..."
+            ></textarea>
+          </label>
+          <div class="actions">
+            <button class="btn btn--outline">Xem trước</button>
+            <button class="btn btn--primary">Tạo báo cáo</button>
+          </div>
+        </section>
 
-    <section class="card card--form">
-      <label class="field">
-        <span class="field__label">Tiêu đề báo cáo</span>
-        <input class="field__input" type="text" placeholder="Ví dụ: Tổng hợp tuần 38" />
-      </label>
-      <label class="field">
-        <span class="field__label">Ghi chú</span>
-        <textarea class="field__textarea" rows="6" placeholder="Mô tả ngắn về tình trạng và mục tiêu sắp tới..."></textarea>
-      </label>
-      <div class="actions">
-        <button class="btn btn--outline">Xem trước</button>
-        <button class="btn btn--primary">Tạo báo cáo</button>
+        <section class="card quick-cards">
+          <h2>Báo cáo nhanh</h2>
+          <div class="quick-cards__grid">
+            <article>
+              <h3>Tuần 38</h3>
+              <p>
+                Đường huyết ổn định 78% thời gian. Ghi chú chế độ ăn phù hợp.
+              </p>
+              <button class="btn btn--ghost">Mở</button>
+            </article>
+            <article>
+              <h3>Tuần 37</h3>
+              <p>Biến động cao vào buổi tối. Đề xuất giảm tinh bột sau 19h.</p>
+              <button class="btn btn--ghost">Mở</button>
+            </article>
+          </div>
+          <a class="primary-btn" href="../history/index.html">Xem lịch sử đo</a>
+        </section>
       </div>
-    </section>
 
-    <section class="card quick-cards">
-      <h2>Báo cáo nhanh</h2>
-      <div class="quick-cards__grid">
-        <article>
-          <h3>Tuần 38</h3>
-          <p>Đường huyết ổn định 78% thời gian. Ghi chú chế độ ăn phù hợp.</p>
-          <button class="btn btn--ghost">Mở</button>
-        </article>
-        <article>
-          <h3>Tuần 37</h3>
-          <p>Biến động cao vào buổi tối. Đề xuất giảm tinh bột sau 19h.</p>
-          <button class="btn btn--ghost">Mở</button>
-        </article>
-      </div>
-      <a class="primary-btn" href="../history/index.html">Xem lịch sử đo</a>
-    </section>
-  </main>
-</body>
+      <!-- Bottom Tab Navigation -->
+      <nav class="bottom-nav">
+        <a href="../../flow4/index.html" title="Lịch sử">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zm-5-7h-2v-2h2v2zm-4 0H8v-2h2v2zm4 4h-2v-2h2v2zm-4 0H8v-2h2v2zm-4-4h2v2H6v-2z"
+            />
+          </svg>
+          <span>Lịch sử</span>
+        </a>
+        <a href="../../flow4/Diary/index.html" title="Nhật ký">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zm-5-7h-2v-2h2v2zm-4 0H8v-2h2v2zm4 4h-2v-2h2v2zm-4 0H8v-2h2v2zm-4-4h2v2H6v-2z"
+            />
+          </svg>
+          <span>Nhật ký</span>
+        </a>
+        <a href="../../flow2/home-1/index.html" title="Trang chủ">
+          <svg viewBox="0 0 24 24">
+            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+          </svg>
+          <span>Trang chủ</span>
+        </a>
+        <a href="../trending1/index.html" class="active" title="Xu hướng">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M16 6l2.29 2.29-4.58 4.58-4-4L2 16.86 3.41 18.27 9.41 12.27l4 4 6.3-6.29L22 12v-6z"
+            />
+          </svg>
+          <span>Xu hướng</span>
+        </a>
+        <a href="../../flow4/nhat-ky-hoat-dong/index.html" title="Tài khoản">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+            />
+          </svg>
+          <span>Tài khoản</span>
+        </a>
+      </nav>
+    </main>
+  </body>
 </html>

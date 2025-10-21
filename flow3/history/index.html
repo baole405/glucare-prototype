@@ -1,106 +1,162 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-  <meta charset="UTF-8" />
-  <link href="https://fonts.googleapis.com/css?family=Calibri&display=swap" rel="stylesheet" />
-  <link href="./css/main.css" rel="stylesheet" />
-  <title>Lịch sử đo</title>
-  <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "YOUR_CLARITY_ID");
-  </script>
-</head>
-<body>
-  <main class="screen">
-    <nav class="nav">
-      <a href="../../index.html">← Trang chủ site</a>
-      <a href="../trending1/index.html">Quay lại Xu hướng</a>
-    </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Calibri&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./css/main.css" rel="stylesheet" />
+    <title>Lịch sử đo</title>
+    <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+        c[a] =
+          c[a] ||
+          function () {
+            (c[a].q = c[a].q || []).push(arguments);
+          };
+        t = l.createElement(r);
+        t.async = 1;
+        t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "YOUR_CLARITY_ID");
+    </script>
+  </head>
+  <body>
+    <main class="screen">
+      <div class="screen-content">
+        <header class="hero">
+          <h1>Lịch sử đo đường huyết</h1>
+          <p>
+            Tìm lại kết quả các lần đo, nhật ký thuốc và hoạt động đã lưu gần
+            đây.
+          </p>
+        </header>
 
-    <header class="hero">
-      <h1>Lịch sử đo đường huyết</h1>
-      <p>Tìm lại kết quả các lần đo, nhật ký thuốc và hoạt động đã lưu gần đây.</p>
-    </header>
+        <section class="card filters">
+          <div class="filters__row">
+            <label>
+              <span>Khoảng thời gian</span>
+              <select>
+                <option>Tuần này</option>
+                <option>Tuần trước</option>
+                <option>30 ngày gần đây</option>
+              </select>
+            </label>
+            <label>
+              <span>Nhật ký</span>
+              <select>
+                <option>Tất cả</option>
+                <option>Thuốc</option>
+                <option>Bữa ăn</option>
+                <option>Nhắc nhở</option>
+              </select>
+            </label>
+          </div>
+        </section>
 
-    <section class="card filters">
-      <div class="filters__row">
-        <label>
-          <span>Khoảng thời gian</span>
-          <select>
-            <option>Tuần này</option>
-            <option>Tuần trước</option>
-            <option>30 ngày gần đây</option>
-          </select>
-        </label>
-        <label>
+        <section class="card">
+          <div class="history__header">
+            <span>Ngày</span>
+            <span>Giờ</span>
+            <span>Kết quả</span>
+            <span>Ghi chú</span>
+          </div>
+          <ul class="history__list">
+            <li>
+              <span>20/10</span>
+              <span>06:00</span>
+              <span>118 mg/dL</span>
+              <span>Trước bữa sáng</span>
+            </li>
+            <li>
+              <span>19/10</span>
+              <span>12:30</span>
+              <span>142 mg/dL</span>
+              <span>Sau bữa trưa</span>
+            </li>
+            <li>
+              <span>19/10</span>
+              <span>18:45</span>
+              <span>134 mg/dL</span>
+              <span>Đi bộ 20 phút</span>
+            </li>
+            <li>
+              <span>18/10</span>
+              <span>21:10</span>
+              <span>126 mg/dL</span>
+              <span>Trước khi ngủ</span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="card reminders">
+          <h2>Nhật ký nhanh</h2>
+          <div class="reminders__grid">
+            <article>
+              <h3>Nhật ký thuốc</h3>
+              <p>Đã uống đầy đủ 5/7 ngày. Nhắc uống buổi tối lúc 20h.</p>
+            </article>
+            <article>
+              <h3>Nhật ký bữa ăn</h3>
+              <p>Thêm 2 ghi chú mới về khẩu phần tối ưu và chất xơ.</p>
+            </article>
+            <article>
+              <h3>Nhắc nhở</h3>
+              <p>Kiểm tra đường huyết lúc 6h sáng và 21h tối mỗi ngày.</p>
+            </article>
+          </div>
+        </section>
+
+        <a
+          class="flow-button flow-button--complete"
+          href="../../flow4/index.html"
+          >Tiếp tục tới Nhật ký cá nhân</a
+        >
+      </div>
+
+      <!-- Bottom Tab Navigation -->
+      <nav class="bottom-nav">
+        <a href="../../flow4/index.html" class="active" title="Lịch sử">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zm-5-7h-2v-2h2v2zm-4 0H8v-2h2v2zm4 4h-2v-2h2v2zm-4 0H8v-2h2v2zm-4-4h2v2H6v-2z"
+            />
+          </svg>
+          <span>Lịch sử</span>
+        </a>
+        <a href="../../flow4/Diary/index.html" title="Nhật ký">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zm-5-7h-2v-2h2v2zm-4 0H8v-2h2v2zm4 4h-2v-2h2v2zm-4 0H8v-2h2v2zm-4-4h2v2H6v-2z"
+            />
+          </svg>
           <span>Nhật ký</span>
-          <select>
-            <option>Tất cả</option>
-            <option>Thuốc</option>
-            <option>Bữa ăn</option>
-            <option>Nhắc nhở</option>
-          </select>
-        </label>
-      </div>
-    </section>
-
-    <section class="card">
-      <div class="history__header">
-        <span>Ngày</span>
-        <span>Giờ</span>
-        <span>Kết quả</span>
-        <span>Ghi chú</span>
-      </div>
-      <ul class="history__list">
-        <li>
-          <span>20/10</span>
-          <span>06:00</span>
-          <span>118 mg/dL</span>
-          <span>Trước bữa sáng</span>
-        </li>
-        <li>
-          <span>19/10</span>
-          <span>12:30</span>
-          <span>142 mg/dL</span>
-          <span>Sau bữa trưa</span>
-        </li>
-        <li>
-          <span>19/10</span>
-          <span>18:45</span>
-          <span>134 mg/dL</span>
-          <span>Đi bộ 20 phút</span>
-        </li>
-        <li>
-          <span>18/10</span>
-          <span>21:10</span>
-          <span>126 mg/dL</span>
-          <span>Trước khi ngủ</span>
-        </li>
-      </ul>
-    </section>
-
-    <section class="card reminders">
-      <h2>Nhật ký nhanh</h2>
-      <div class="reminders__grid">
-        <article>
-          <h3>Nhật ký thuốc</h3>
-          <p>Đã uống đầy đủ 5/7 ngày. Nhắc uống buổi tối lúc 20h.</p>
-        </article>
-        <article>
-          <h3>Nhật ký bữa ăn</h3>
-          <p>Thêm 2 ghi chú mới về khẩu phần tối ưu và chất xơ.</p>
-        </article>
-        <article>
-          <h3>Nhắc nhở</h3>
-          <p>Kiểm tra đường huyết lúc 6h sáng và 21h tối mỗi ngày.</p>
-        </article>
-      </div>
-    </section>
-
-    <a class="flow-button flow-button--complete" href="../../flow4/index.html">Tiếp tục tới Nhật ký cá nhân</a>
-  </main>
-</body>
+        </a>
+        <a href="../../flow2/home-1/index.html" title="Trang chủ">
+          <svg viewBox="0 0 24 24">
+            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+          </svg>
+          <span>Trang chủ</span>
+        </a>
+        <a href="../trending1/index.html" title="Xu hướng">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M16 6l2.29 2.29-4.58 4.58-4-4L2 16.86 3.41 18.27 9.41 12.27l4 4 6.3-6.29L22 12v-6z"
+            />
+          </svg>
+          <span>Xu hướng</span>
+        </a>
+        <a href="../../flow4/nhat-ky-hoat-dong/index.html" title="Tài khoản">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+            />
+          </svg>
+          <span>Tài khoản</span>
+        </a>
+      </nav>
+    </main>
+  </body>
 </html>
