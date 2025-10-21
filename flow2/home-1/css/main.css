@@ -9,11 +9,9 @@ body {
   color: #1f3b4d;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  padding: 24px 24px 100px 24px;
-  position: relative;
+  justify-content: center;
+  padding: 24px;
 }
 
 .screen {
@@ -21,23 +19,23 @@ body {
   background: #e9faff;
   border-radius: 24px;
   box-shadow: 0 18px 36px rgba(17, 73, 110, 0.15);
-  padding: 32px 24px 40px;
+  display: flex;
+  flex-direction: column;
+  height: 932px;
+  position: relative;
+}
+
+.screen > :not(.bottom-nav) {
+  padding: 32px 24px 0;
+  flex: 1;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
 .nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 14px;
-}
-
-.nav a {
-  text-decoration: none;
-  color: #0b567d;
-  font-weight: 600;
+  display: none;
 }
 
 header.hero h1 {
@@ -126,19 +124,17 @@ header.hero p {
 
 /* Bottom Tab Navigation */
 .bottom-nav {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   background: #56c6d1;
   display: flex;
   justify-content: space-around;
-  align-items: flex-end;
+  align-items: center;
   padding: 12px 0;
-  box-shadow: 0 -4px 16px rgba(11, 86, 125, 0.15);
-  border-radius: 24px 24px 0 0;
-  max-width: 430px;
-  margin: 0 auto;
+  border-radius: 0 0 24px 24px;
+  gap: 0;
 }
 
 .bottom-nav a,
