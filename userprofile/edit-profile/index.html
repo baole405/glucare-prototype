@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Calibri&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./css/main.css" rel="stylesheet" />
+    <title>Chỉnh sửa hồ sơ</title>
+  </head>
+  <body>
+    <main class="screen">
+      <header class="app-bar">
+        <a href="../table-content/index.html" class="back-btn">← Quay lại</a>
+        <h1>Chỉnh sửa hồ sơ</h1>
+      </header>
+
+      <div class="content">
+        <!-- Profile Picture Section -->
+        <section class="profile-section">
+          <div class="profile-picture">
+            <img src="./images/v128_1371.png" alt="Avatar" id="profileImage" />
+          </div>
+          <label class="upload-btn">
+            <input
+              type="file"
+              id="imageUpload"
+              accept="image/*"
+              style="display: none"
+            />
+            <span>📷 Tải lên ảnh</span>
+          </label>
+        </section>
+
+        <!-- Form Fields -->
+        <form class="form-section">
+          <div class="form-group">
+            <label for="fullName">Họ và tên</label>
+            <input
+              type="text"
+              id="fullName"
+              placeholder="Nguyễn Văn A"
+              value="Nguyễn Văn A"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Số điện thoại</label>
+            <input
+              type="tel"
+              id="phone"
+              placeholder="012****345"
+              value="012****345"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Nhập email của bạn" />
+          </div>
+
+          <div class="form-group">
+            <label for="dob">Ngày sinh</label>
+            <input type="date" id="dob" />
+          </div>
+
+          <div class="form-group">
+            <label for="gender">Giới tính</label>
+            <select id="gender">
+              <option value="">Chọn giới tính</option>
+              <option value="male">Nam</option>
+              <option value="female">Nữ</option>
+              <option value="other">Khác</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="address">Địa chỉ</label>
+            <textarea
+              id="address"
+              placeholder="Nhập địa chỉ"
+              rows="3"
+            ></textarea>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="button-group">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              onclick="history.back()"
+            >
+              Hủy
+            </button>
+            <button type="submit" class="btn btn-primary">Lưu thay đổi</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Bottom Tab Navigation -->
+      <nav class="bottom-nav">
+        <a href="../../flow3/history/index.html" title="Lịch sử">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zm-5-7h-2v-2h2v2zm-4 0H8v-2h2v2zm4 4h-2v-2h2v2zm-4 0H8v-2h2v2zm-4-4h2v2H6v-2z"
+            />
+          </svg>
+          <span>Lịch sử</span>
+        </a>
+        <a href="../../flow4/Diary/index.html" title="Nhật ký">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zm-5-7h-2v-2h2v2zm-4 0H8v-2h2v2zm4 4h-2v-2h2v2zm-4 0H8v-2h2v2zm-4-4h2v2H6v-2z"
+            />
+          </svg>
+          <span>Nhật ký</span>
+        </a>
+        <a href="../../flow2/home-1/index.html" title="Trang chủ">
+          <svg viewBox="0 0 24 24">
+            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+          </svg>
+          <span>Trang chủ</span>
+        </a>
+        <a href="../../flow3/trending1/index.html" title="Xu hướng">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M16 6l2.29 2.29-4.58 4.58-4-4L2 16.86 3.41 18.27 9.41 12.27l4 4 6.3-6.29L22 12v-6z"
+            />
+          </svg>
+          <span>Xu hướng</span>
+        </a>
+        <a href="../table-content/index.html" class="active" title="Tài khoản">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+            />
+          </svg>
+          <span>Tài khoản</span>
+        </a>
+      </nav>
+    </main>
+
+    <script>
+      // Handle image upload
+      document
+        .getElementById("imageUpload")
+        .addEventListener("change", function (e) {
+          const file = e.target.files[0];
+          if (file) {
+            const reader = new FileReader();
+            reader.onload = function (event) {
+              document.getElementById("profileImage").src = event.target.result;
+            };
+            reader.readAsDataURL(file);
+          }
+        });
+
+      // Handle form submission
+      document.querySelector("form").addEventListener("submit", function (e) {
+        e.preventDefault();
+        alert("Thông tin đã được lưu thành công!");
+      });
+    </script>
+  </body>
+</html>

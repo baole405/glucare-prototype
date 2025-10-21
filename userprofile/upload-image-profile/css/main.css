@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+}
+.v128_1308 {
+  width: 430px;
+  height: 932px;
+  background: rgba(233,250,255,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  overflow: hidden;
+}
+.v128_1316 {
+  width: 430px;
+  height: 82px;
+  background: rgba(71,138,166,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.name {
+  color: #fff;
+}
+.v128_1318 {
+  width: 186px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 29px;
+  left: 121px;
+  font-family: Calibri;
+  font-weight: Bold;
+  font-size: 24px;
+  opacity: 1;
+  text-align: center;
+}
+.v128_1339 {
+  width: 23px;
+  height: 46px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 64px;
+  left: 48px;
+  overflow: hidden;
+}
+.v128_1340 {
+  width: 14px;
+  height: 24px;
+  background: rgba(233,251,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 11px;
+  left: 6px;
+}
+.v128_1389 {
+  width: 300px;
+  height: 300px;
+  background: rgba(233,251,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 277px;
+  left: 68px;
+  border: 1px solid rgba(0,0,0,1);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+}
+.v128_1392 {
+  width: 131px;
+  height: 39px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 587px;
+  left: 152px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+}
+.v128_1393 {
+  width: 67px;
+  color: rgba(30,50,72,1);
+  position: absolute;
+  top: 595px;
+  left: 197px;
+  font-family: Calibri;
+  font-weight: Bold;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.v128_1394 {
+  width: 24px;
+  height: 24px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 593px;
+  left: 170px;
+  overflow: hidden;
+}
+.v128_1395 {
+  width: 18px;
+  height: 18px;
+  background: rgba(30,50,72,1);
+  opacity: 1;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+}
