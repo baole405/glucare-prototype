@@ -1,66 +1,101 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-  <meta charset="UTF-8" />
-  <link href="https://fonts.googleapis.com/css?family=Calibri&display=swap" rel="stylesheet" />
-  <link href="../flow-ui.css" rel="stylesheet" />
-  <title>Thiết lập hồ sơ</title>
-  <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "YOUR_CLARITY_ID");
-  </script>
-  <style>
-    .radio-group {
-      display: flex;
-      gap: 16px;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Calibri&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../flow-ui.css" rel="stylesheet" />
+    <title>Thiết lập hồ sơ</title>
+    <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+        c[a] =
+          c[a] ||
+          function () {
+            (c[a].q = c[a].q || []).push(arguments);
+          };
+        t = l.createElement(r);
+        t.async = 1;
+        t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "YOUR_CLARITY_ID");
+    </script>
+    <style>
+      .radio-group {
+        display: flex;
+        gap: 16px;
+      }
 
-    .radio-group label {
-      font-size: 14px;
-      color: var(--text-muted);
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-    }
-  </style>
-</head>
-<body>
-  <main class="screen">
-    <header class="app-bar">
-      <a class="app-bar__back" href="../login-v4/index.html">←</a>
-      <span>Thiết lập hồ sơ</span>
-      <span class="app-bar__brand">GluCare</span>
-    </header>
+      .radio-group label {
+        font-size: 14px;
+        color: var(--text-muted);
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="screen">
+      <header class="app-bar">
+        <a class="app-bar__back" href="../login-v4/index.html">←</a>
+        <span>Thiết lập hồ sơ</span>
+        <span class="app-bar__brand">GluCare</span>
+      </header>
 
-    <div class="content">
-      <section>
-        <h1>Thông tin cá nhân</h1>
-        <p>Điền các thông tin cơ bản để chúng tôi cá nhân hóa trải nghiệm của bạn.</p>
-      </section>
+      <div class="content">
+        <section>
+          <h1>Thông tin cá nhân</h1>
+          <p>
+            Điền các thông tin cơ bản để chúng tôi cá nhân hóa trải nghiệm của
+            bạn.
+          </p>
+        </section>
 
-      <form class="form" onsubmit="event.preventDefault(); location.href='../yourinfo-click/index.html';">
-        <div class="form-field">
-          <label for="full-name">Họ và tên</label>
-          <input id="full-name" name="full-name" type="text" placeholder="Nguyễn Văn An" required />
-        </div>
-        <div class="form-field">
-          <label>Giới tính</label>
-          <div class="radio-group">
-            <label><input type="radio" name="gender" value="male" checked /> Nam</label>
-            <label><input type="radio" name="gender" value="female" /> Nữ</label>
-            <label><input type="radio" name="gender" value="other" /> Khác</label>
+        <form
+          class="form"
+          onsubmit="event.preventDefault(); location.href='../../flow2/index.html';"
+        >
+          <div class="form-field">
+            <label for="full-name">Họ và tên</label>
+            <input
+              id="full-name"
+              name="full-name"
+              type="text"
+              placeholder="Nguyễn Văn An"
+              required
+            />
           </div>
-        </div>
-        <div class="form-field">
-          <label for="birthday">Ngày sinh</label>
-          <input id="birthday" name="birthday" type="date" value="2000-01-01" required />
-        </div>
-        <button class="primary-btn" type="submit">Lưu hồ sơ</button>
-      </form>
-    </div>
-  </main>
-</body>
+          <div class="form-field">
+            <label>Giới tính</label>
+            <div class="radio-group">
+              <label
+                ><input type="radio" name="gender" value="male" checked />
+                Nam</label
+              >
+              <label
+                ><input type="radio" name="gender" value="female" /> Nữ</label
+              >
+              <label
+                ><input type="radio" name="gender" value="other" /> Khác</label
+              >
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="birthday">Ngày sinh</label>
+            <input
+              id="birthday"
+              name="birthday"
+              type="date"
+              value="2000-01-01"
+              required
+            />
+          </div>
+          <button class="primary-btn" type="submit">Lưu hồ sơ</button>
+        </form>
+      </div>
+    </main>
+  </body>
 </html>

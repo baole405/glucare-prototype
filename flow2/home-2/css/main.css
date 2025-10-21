@@ -9,9 +9,11 @@ body {
   color: #1f3b4d;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 24px;
+  justify-content: flex-start;
+  padding: 24px 24px 100px 24px;
+  position: relative;
 }
 
 .screen {
@@ -65,7 +67,11 @@ header.hero p {
 
 .chart-shell {
   height: 160px;
-  background: linear-gradient(180deg, rgba(233, 250, 255, 0.6), rgba(212, 242, 255, 0.9));
+  background: linear-gradient(
+    180deg,
+    rgba(233, 250, 255, 0.6),
+    rgba(212, 242, 255, 0.9)
+  );
   border-radius: 16px;
   position: relative;
   overflow: hidden;
@@ -80,8 +86,12 @@ header.hero p {
   border-top: 1px dashed rgba(11, 86, 125, 0.25);
 }
 
-.chart-shell::before { top: 40%; }
-.chart-shell::after { top: 70%; }
+.chart-shell::before {
+  top: 40%;
+}
+.chart-shell::after {
+  top: 70%;
+}
 
 .chart-line {
   position: absolute;
@@ -90,8 +100,14 @@ header.hero p {
   top: 20px;
   bottom: 20px;
   border-radius: 10px;
-  background: linear-gradient(180deg, rgba(11, 86, 125, 0.56), rgba(11, 86, 125, 0.2));
-  clip-path: path("M0,120 C60,40 120,90 180,60 C240,120 300,80 360,115 L360,140 L0,140 Z");
+  background: linear-gradient(
+    180deg,
+    rgba(11, 86, 125, 0.56),
+    rgba(11, 86, 125, 0.2)
+  );
+  clip-path: path(
+    "M0,120 C60,40 120,90 180,60 C240,120 300,80 360,115 L360,140 L0,140 Z"
+  );
 }
 
 .ticks {
@@ -212,4 +228,61 @@ header.hero p {
 
 .primary-btn:hover {
   background: #094362;
+}
+
+/* Bottom Tab Navigation */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #56c6d1;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 12px 0;
+  box-shadow: 0 -4px 16px rgba(11, 86, 125, 0.15);
+  border-radius: 24px 24px 0 0;
+  max-width: 430px;
+  margin: 0 auto;
+}
+
+.bottom-nav a,
+.bottom-nav button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 12px;
+  font-weight: 600;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px 12px;
+  transition: all 0.2s ease;
+  flex: 1;
+}
+
+.bottom-nav a:hover,
+.bottom-nav button:hover {
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.bottom-nav a.active {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+}
+
+.bottom-nav svg {
+  width: 24px;
+  height: 24px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
