@@ -12,63 +12,69 @@
   <body>
     <main class="screen">
       <header class="app-bar">
-        <a href="../table-content/index.html" class="back-btn">
+        <a href="../table-content/index.html" class="back-btn" title="Quay lại">
           <svg viewBox="0 0 24 24">
             <path
               d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
             />
           </svg>
         </a>
-        <h1>Chia sẻ dữ liệu</h1>
+        <h1>Thông tin cá nhân</h1>
       </header>
 
-      <div class="content">
-        <section class="card">
-          <h2>Chia sẻ dữ liệu sức khỏe</h2>
-          <p>
-            Chia sẻ dữ liệu đường huyết, nhật ký thuốc và hoạt động của bạn với
-            bác sĩ hoặc người thân để được hỗ trợ tốt hơn.
-          </p>
-
-          <div class="share-options">
-            <div class="share-option">
-              <div class="option-icon">👨‍⚕️</div>
-              <div class="option-content">
-                <h3>Chia sẻ với bác sĩ</h3>
-                <p>Gửi báo cáo chi tiết cho bác sĩ theo dõi</p>
-                <button class="btn btn--primary">Chọn bác sĩ</button>
-              </div>
-            </div>
-
-            <div class="share-option">
-              <div class="option-icon">👨‍👩‍👧‍👦</div>
-              <div class="option-content">
-                <h3>Chia sẻ với người thân</h3>
-                <p>Cho phép người thân xem dữ liệu sức khỏe của bạn</p>
-                <button class="btn btn--primary">Chọn người thân</button>
-              </div>
-            </div>
-
-            <div class="share-option">
-              <div class="option-icon">📱</div>
-              <div class="option-content">
-                <h3>Xuất dữ liệu</h3>
-                <p>Tải xuống tất cả dữ liệu của bạn</p>
-                <button class="btn btn--secondary">Xuất PDF</button>
-                <button class="btn btn--secondary">Xuất CSV</button>
-              </div>
-            </div>
+      <div class="content share-data-content">
+        <div class="share-container">
+          <!-- User Avatar -->
+          <div class="user-avatar">
+            <img src="../../assets/v147_1673.png" alt="User Avatar" />
           </div>
-        </section>
 
-        <section class="card">
-          <h3>Quyền riêng tư</h3>
-          <p>
-            Dữ liệu của bạn được mã hóa và chỉ chia sẻ khi bạn cho phép. Bạn có
-            thể thu hồi quyền chia sẻ bất cứ lúc nào.
-          </p>
-          <button class="btn btn--ghost">Xem chính sách bảo mật</button>
-        </section>
+          <!-- User Name -->
+          <div class="user-name">
+            <h2>Nguyễn Văn A</h2>
+          </div>
+
+          <!-- QR Code -->
+          <div class="qr-code-section">
+            <img src="../../assets/qr-code.png" alt="QR Code" class="qr-code" />
+            <p class="qr-description">
+              Quét mã để kết nối với tài khoản theo dõi
+            </p>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="contact-section">
+            <div class="phone-input-group">
+              <select class="country-code">
+                <option value="+84">+84</option>
+                <option value="+1">+1</option>
+                <option value="+44">+44</option>
+              </select>
+              <input
+                type="text"
+                placeholder="Nhập số điện thoại"
+                class="phone-input"
+              />
+              <button class="phone-arrow">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12l-4.58 4.59z"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <!-- QR Button -->
+            <button class="qr-button">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M3 11h8V3H3v8zm0 8h8v-8H3v8zm8-16h8V3h-8v8zm8 8h8v-8h-8v8zm-8 8h8v-8h-8v8zm8-16v8h8V3h-8z"
+                />
+              </svg>
+              Quét mã QR
+            </button>
+          </div>
+        </div>
       </div>
 
       <!-- Bottom Tab Navigation -->

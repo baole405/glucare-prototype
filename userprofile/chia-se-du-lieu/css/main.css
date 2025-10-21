@@ -28,7 +28,7 @@ body {
 .app-bar {
   background: linear-gradient(135deg, #478aa6 0%, #56c6d1 100%);
   color: #fff;
-  padding: 24px;
+  padding: 20px 24px;
   text-align: center;
   border-radius: 24px 24px 0 0;
   position: relative;
@@ -60,139 +60,192 @@ body {
 
 .app-bar h1 {
   margin: 0;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
 }
 
 .content {
   flex: 1;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Share Data Content */
+.share-data-content {
+  justify-content: center;
+  align-items: center;
   padding: 24px;
   overflow-y: auto;
+}
+
+.share-container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-}
-
-/* Card Styles */
-.card {
-  background: #fff;
-  border-radius: 16px;
-  padding: 20px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-}
-
-.card h2 {
-  margin: 0 0 12px;
-  font-size: 20px;
-  color: #0b567d;
-  font-weight: 700;
-}
-
-.card h3 {
-  margin: 0 0 8px;
-  font-size: 16px;
-  color: #0b567d;
-  font-weight: 600;
-}
-
-.card p {
-  margin: 0 0 16px;
-  color: #527089;
-  line-height: 1.5;
-}
-
-/* Share Options */
-.share-options {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.share-option {
-  display: flex;
   align-items: center;
+  justify-content: center;
+  width: 100%;
   gap: 16px;
-  padding: 16px;
-  background: #f8fbfc;
-  border-radius: 12px;
-  border: 1px solid #e1e8ed;
 }
 
-.option-icon {
-  font-size: 32px;
-  width: 48px;
-  height: 48px;
+/* User Avatar */
+.user-avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #e9faff;
-  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.option-content {
-  flex: 1;
+.user-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.option-content h3 {
-  margin: 0 0 4px;
-  font-size: 16px;
-  color: #0b567d;
-  font-weight: 600;
+/* User Name */
+.user-name {
+  text-align: center;
 }
 
-.option-content p {
+.user-name h2 {
   margin: 0;
-  font-size: 14px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #0b567d;
+}
+
+/* QR Code Section */
+.qr-code-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.qr-code {
+  width: 160px;
+  height: 160px;
+  background: #fff;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.qr-description {
+  margin: 0;
+  font-size: 13px;
   color: #527089;
+  text-align: center;
   line-height: 1.4;
 }
 
-/* Button Styles */
-.btn {
-  padding: 12px 20px;
-  border-radius: 8px;
-  font-weight: 600;
-  text-decoration: none;
-  display: inline-block;
-  text-align: center;
-  transition: all 0.2s ease;
-  border: none;
-  cursor: pointer;
-  font-size: 14px;
+/* Contact Section */
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 320px;
 }
 
-.btn--primary {
+.phone-input-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 8px 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e1e8ed;
+}
+
+.country-code {
+  border: none;
+  background: transparent;
+  color: #0b567d;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+  padding: 4px 0;
+}
+
+.phone-input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+  color: #0b567d;
+  font-family: inherit;
+}
+
+.phone-input::placeholder {
+  color: #8497a3;
+}
+
+.phone-arrow {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background: #56c6d1;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.phone-arrow:hover {
+  background: #4db5bf;
+  transform: scale(1.05);
+}
+
+.phone-arrow svg {
+  width: 18px;
+  height: 18px;
+  stroke: currentColor;
+  fill: currentColor;
+  stroke-width: 2;
+}
+
+/* QR Button */
+.qr-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 20px;
+  background: #fff;
+  border: 2px solid #56c6d1;
+  border-radius: 8px;
+  color: #56c6d1;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.qr-button:hover {
   background: #56c6d1;
   color: #fff;
 }
 
-.btn--primary:hover {
-  background: #4db5bf;
-  transform: translateY(-1px);
-}
-
-.btn--secondary {
-  background: #fff;
-  color: #56c6d1;
-  border: 1px solid #56c6d1;
-  margin-right: 8px;
-}
-
-.btn--secondary:hover {
-  background: #e9faff;
-  transform: translateY(-1px);
-}
-
-.btn--ghost {
-  background: transparent;
-  color: #56c6d1;
-  border: none;
-  padding: 8px 0;
-  font-size: 14px;
-}
-
-.btn--ghost:hover {
-  background: rgba(86, 198, 209, 0.1);
+.qr-button svg {
+  width: 18px;
+  height: 18px;
+  stroke: currentColor;
+  fill: currentColor;
 }
 
 /* Bottom Navigation */
@@ -208,6 +261,7 @@ body {
   padding: 12px 0;
   border-radius: 0 0 24px 24px;
   gap: 0;
+  z-index: 100;
 }
 
 .bottom-nav a,
@@ -215,10 +269,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 6px;
+  gap: 4px;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.7);
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
   background: none;
   border: none;
