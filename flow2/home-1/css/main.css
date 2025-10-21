@@ -91,6 +91,14 @@ header.hero p {
   color: #0b567d;
   font-weight: 600;
   font-size: 13px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+
+.chip:hover {
+  background: rgba(11, 86, 125, 0.2);
+  cursor: pointer;
 }
 
 .primary-btn {

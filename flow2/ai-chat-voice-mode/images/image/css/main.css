@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+}
+.v147_1606 {
+  width: 143px;
+  height: 143px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v147_1607 {
+  width: 125px;
+  height: 125px;
+  background: rgba(30,106,153,1);
+  opacity: 1;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
