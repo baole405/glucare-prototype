@@ -1,54 +1,96 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-  <meta charset="UTF-8" />
-  <link href="https://fonts.googleapis.com/css?family=Calibri&display=swap" rel="stylesheet" />
-  <link href="../flow-ui.css" rel="stylesheet" />
-  <title>Đăng ký 3</title>
-  <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "YOUR_CLARITY_ID");
-  </script>
-  <style>
-    .otp-grid {
-      grid-template-columns: repeat(4, 70px);
-      justify-content: center;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Calibri&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../flow-ui.css" rel="stylesheet" />
+    <title>Đăng ký 3</title>
+    <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+        c[a] =
+          c[a] ||
+          function () {
+            (c[a].q = c[a].q || []).push(arguments);
+          };
+        t = l.createElement(r);
+        t.async = 1;
+        t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "trimm9bv8x");
+    </script>
+    <style>
+      .otp-grid {
+        grid-template-columns: repeat(4, 70px);
+        justify-content: center;
+      }
 
-    .otp-grid input {
-      font-size: 24px;
-      padding: 14px 0;
-    }
-  </style>
-</head>
-<body>
-  <main class="screen">
-    <header class="app-bar">
-      <a class="app-bar__back" href="../register-2/index.html">←</a>
-      <span>OTP đăng ký</span>
-      <span class="app-bar__brand">GluCare</span>
-    </header>
+      .otp-grid input {
+        font-size: 24px;
+        padding: 14px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="screen">
+      <header class="app-bar">
+        <a class="app-bar__back" href="../register-2/index.html">←</a>
+        <span>OTP đăng ký</span>
+        <span class="app-bar__brand">GluCare</span>
+      </header>
 
-    <div class="content">
-      <section>
-        <h1>Nhập mã xác thực</h1>
-        <p>Mã gồm 4 chữ số đã gửi đến số <strong>0999 123 456</strong>.</p>
-      </section>
+      <div class="content">
+        <section>
+          <h1>Nhập mã xác thực</h1>
+          <p>Mã gồm 4 chữ số đã gửi đến số <strong>0999 123 456</strong>.</p>
+        </section>
 
-      <form class="form" onsubmit="event.preventDefault(); location.href='../register-4/index.html';">
-        <div class="otp-grid">
-          <input type="text" inputmode="numeric" maxlength="1" aria-label="OTP số 1" required />
-          <input type="text" inputmode="numeric" maxlength="1" aria-label="OTP số 2" required />
-          <input type="text" inputmode="numeric" maxlength="1" aria-label="OTP số 3" required />
-          <input type="text" inputmode="numeric" maxlength="1" aria-label="OTP số 4" required />
-        </div>
-        <a class="link" href="#" onclick="alert('Đã gửi lại OTP'); return false;">Gửi lại mã</a>
-        <button class="primary-btn" type="submit">Xác nhận</button>
-      </form>
-    </div>
-  </main>
-</body>
+        <form
+          class="form"
+          onsubmit="event.preventDefault(); location.href='../register-4/index.html';"
+        >
+          <div class="otp-grid">
+            <input
+              type="text"
+              inputmode="numeric"
+              maxlength="1"
+              aria-label="OTP số 1"
+              required
+            />
+            <input
+              type="text"
+              inputmode="numeric"
+              maxlength="1"
+              aria-label="OTP số 2"
+              required
+            />
+            <input
+              type="text"
+              inputmode="numeric"
+              maxlength="1"
+              aria-label="OTP số 3"
+              required
+            />
+            <input
+              type="text"
+              inputmode="numeric"
+              maxlength="1"
+              aria-label="OTP số 4"
+              required
+            />
+          </div>
+          <a
+            class="link"
+            href="#"
+            onclick="alert('Đã gửi lại OTP'); return false;"
+            >Gửi lại mã</a
+          >
+          <button class="primary-btn" type="submit">Xác nhận</button>
+        </form>
+      </div>
+    </main>
+  </body>
 </html>

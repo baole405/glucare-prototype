@@ -1,44 +1,64 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-  <meta charset="UTF-8" />
-  <link href="https://fonts.googleapis.com/css?family=Calibri&display=swap" rel="stylesheet" />
-  <link href="../flow-ui.css" rel="stylesheet" />
-  <title>Đăng ký 1</title>
-  <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "YOUR_CLARITY_ID");
-  </script>
-</head>
-<body>
-  <main class="screen">
-    <header class="app-bar">
-      <a class="app-bar__back" href="../login/index.html">←</a>
-      <span>Đăng ký</span>
-      <span class="app-bar__brand">GluCare</span>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Calibri&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../flow-ui.css" rel="stylesheet" />
+    <title>Đăng ký 1</title>
+    <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+        c[a] =
+          c[a] ||
+          function () {
+            (c[a].q = c[a].q || []).push(arguments);
+          };
+        t = l.createElement(r);
+        t.async = 1;
+        t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "trimm9bv8x");
+    </script>
+  </head>
+  <body>
+    <main class="screen">
+      <header class="app-bar">
+        <a class="app-bar__back" href="../login/index.html">←</a>
+        <span>Đăng ký</span>
+        <span class="app-bar__brand">GluCare</span>
+      </header>
 
-    <div class="content">
-      <section>
-        <h1>Tạo tài khoản mới</h1>
-        <p>Điền số điện thoại để bắt đầu quá trình đăng ký.</p>
-      </section>
+      <div class="content">
+        <section>
+          <h1>Tạo tài khoản mới</h1>
+          <p>Điền số điện thoại để bắt đầu quá trình đăng ký.</p>
+        </section>
 
-      <form class="form" onsubmit="event.preventDefault(); location.href='../register-2/index.html';">
-        <div class="form-field">
-          <label for="reg-phone">Số điện thoại</label>
-          <input id="reg-phone" name="phone" type="tel" placeholder="0999 123 456" autocomplete="tel" required />
-        </div>
-        <label class="checkbox">
-          <input type="checkbox" required />
-          <span>Tôi đồng ý nhận thông báo hướng dẫn sử dụng từ GluCare.</span>
-        </label>
-        <button class="primary-btn" type="submit">Tiếp tục</button>
-      </form>
-    </div>
-  </main>
-</body>
+        <form
+          class="form"
+          onsubmit="event.preventDefault(); location.href='../register-2/index.html';"
+        >
+          <div class="form-field">
+            <label for="reg-phone">Số điện thoại</label>
+            <input
+              id="reg-phone"
+              name="phone"
+              type="tel"
+              placeholder="0999 123 456"
+              autocomplete="tel"
+              required
+            />
+          </div>
+          <label class="checkbox">
+            <input type="checkbox" required />
+            <span>Tôi đồng ý nhận thông báo hướng dẫn sử dụng từ GluCare.</span>
+          </label>
+          <button class="primary-btn" type="submit">Tiếp tục</button>
+        </form>
+      </div>
+    </main>
+  </body>
 </html>
