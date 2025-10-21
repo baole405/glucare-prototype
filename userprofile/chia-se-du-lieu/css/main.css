@@ -1,0 +1,269 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f5f8fb;
+  font-family: "Calibri", "Segoe UI", sans-serif;
+  color: #1f3b4d;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.screen {
+  width: min(430px, 100%);
+  height: 932px;
+  background: #e9faff;
+  border-radius: 24px;
+  box-shadow: 0 18px 36px rgba(17, 73, 110, 0.15);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.app-bar {
+  background: linear-gradient(135deg, #478aa6 0%, #56c6d1 100%);
+  color: #fff;
+  padding: 24px;
+  text-align: center;
+  border-radius: 24px 24px 0 0;
+  position: relative;
+}
+
+.back-btn {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background 0.2s ease;
+}
+
+.back-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.back-btn svg {
+  width: 24px;
+  height: 24px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+}
+
+.app-bar h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.content {
+  flex: 1;
+  padding: 24px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Card Styles */
+.card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.card h2 {
+  margin: 0 0 12px;
+  font-size: 20px;
+  color: #0b567d;
+  font-weight: 700;
+}
+
+.card h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  color: #0b567d;
+  font-weight: 600;
+}
+
+.card p {
+  margin: 0 0 16px;
+  color: #527089;
+  line-height: 1.5;
+}
+
+/* Share Options */
+.share-options {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.share-option {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  background: #f8fbfc;
+  border-radius: 12px;
+  border: 1px solid #e1e8ed;
+}
+
+.option-icon {
+  font-size: 32px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e9faff;
+  border-radius: 12px;
+}
+
+.option-content {
+  flex: 1;
+}
+
+.option-content h3 {
+  margin: 0 0 4px;
+  font-size: 16px;
+  color: #0b567d;
+  font-weight: 600;
+}
+
+.option-content p {
+  margin: 0;
+  font-size: 14px;
+  color: #527089;
+  line-height: 1.4;
+}
+
+/* Button Styles */
+.btn {
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn--primary {
+  background: #56c6d1;
+  color: #fff;
+}
+
+.btn--primary:hover {
+  background: #4db5bf;
+  transform: translateY(-1px);
+}
+
+.btn--secondary {
+  background: #fff;
+  color: #56c6d1;
+  border: 1px solid #56c6d1;
+  margin-right: 8px;
+}
+
+.btn--secondary:hover {
+  background: #e9faff;
+  transform: translateY(-1px);
+}
+
+.btn--ghost {
+  background: transparent;
+  color: #56c6d1;
+  border: none;
+  padding: 8px 0;
+  font-size: 14px;
+}
+
+.btn--ghost:hover {
+  background: rgba(86, 198, 209, 0.1);
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #56c6d1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 12px 0;
+  border-radius: 0 0 24px 24px;
+  gap: 0;
+}
+
+.bottom-nav a,
+.bottom-nav button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 12px;
+  font-weight: 600;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px 12px;
+  transition: all 0.2s ease;
+  flex: 1;
+}
+
+.bottom-nav a:hover,
+.bottom-nav button:hover {
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.bottom-nav a.active {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+}
+
+.bottom-nav svg {
+  width: 24px;
+  height: 24px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Scrollbar Styling */
+.content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.content::-webkit-scrollbar-thumb {
+  background: rgba(11, 86, 125, 0.3);
+  border-radius: 3px;
+}
+
+.content::-webkit-scrollbar-thumb:hover {
+  background: rgba(11, 86, 125, 0.5);
+}

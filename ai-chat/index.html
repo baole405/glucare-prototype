@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Calibri&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./css/main.css" rel="stylesheet" />
+    <title>AI Chat</title>
+  </head>
+  <body>
+    <main class="screen">
+      <header class="app-bar">
+        <a href="../flow2/home-1/index.html" class="back-btn">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+            />
+          </svg>
+        </a>
+        <h1>AI Coach</h1>
+      </header>
+
+      <div class="content">
+        <div class="chat-container">
+          <div class="message ai-message">
+            <div class="message-avatar">🤖</div>
+            <div class="message-content">
+              <p>
+                Xin chào! Tôi là AI Coach của bạn. Tôi có thể giúp bạn quản lý
+                đường huyết và đưa ra lời khuyên về chế độ ăn uống, tập luyện.
+                Bạn muốn hỏi gì hôm nay?
+              </p>
+            </div>
+          </div>
+
+          <div class="message user-message">
+            <div class="message-content">
+              <p>Tôi nên ăn gì hôm nay?</p>
+            </div>
+            <div class="message-avatar">👤</div>
+          </div>
+
+          <div class="message ai-message">
+            <div class="message-content">
+              <p>
+                Dựa trên dữ liệu đường huyết gần đây của bạn, tôi khuyến nghị:
+              </p>
+              <ul>
+                <li>🥗 Bữa sáng: Yến mạch với chuối và hạt chia</li>
+                <li>🍗 Bữa trưa: Cá hồi nướng với rau xanh</li>
+                <li>🥑 Bữa tối: Salad gà với avocado</li>
+              </ul>
+              <p>Nhớ kiểm tra đường huyết sau mỗi bữa ăn nhé!</p>
+            </div>
+            <div class="message-avatar">🤖</div>
+          </div>
+        </div>
+
+        <div class="chat-input-container">
+          <div class="chat-input">
+            <input type="text" placeholder="Nhập câu hỏi của bạn..." />
+            <button
+              class="voice-btn"
+              onclick="window.location.href='../ai-chat-voice-mode/index.html'"
+            >
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 14c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z"
+                />
+              </svg>
+            </button>
+            <button class="send-btn">
+              <svg viewBox="0 0 24 24">
+                <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Tab Navigation -->
+      <nav class="bottom-nav">
+        <a href="../flow3/history/index.html" title="Lịch sử">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zm-5-7h-2v-2h2v2zm-4 0H8v-2h2v2zm4 4h-2v-2h2v2zm-4 0H8v-2h2v2zm-4-4h2v2H6v-2z"
+            />
+          </svg>
+          <span>Lịch sử</span>
+        </a>
+        <a href="../flow4/Diary/index.html" title="Nhật ký">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zm-5-7h-2v-2h2v2zm-4 0H8v-2h2v2zm4 4h-2v-2h2v2zm-4 0H8v-2h2v2zm-4-4h2v2H6v-2z"
+            />
+          </svg>
+          <span>Nhật ký</span>
+        </a>
+        <a href="../flow2/home-1/index.html" title="Trang chủ">
+          <svg viewBox="0 0 24 24">
+            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+          </svg>
+          <span>Trang chủ</span>
+        </a>
+        <a href="../flow3/trending1/index.html" title="Xu hướng">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M16 6l2.29 2.29-4.58 4.58-4-4L2 16.86 3.41 18.27 9.41 12.27l4 4 6.3-6.29L22 12v-6z"
+            />
+          </svg>
+          <span>Xu hướng</span>
+        </a>
+        <a href="../userprofile/table-content/index.html" title="Tài khoản">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+            />
+          </svg>
+          <span>Tài khoản</span>
+        </a>
+      </nav>
+    </main>
+  </body>
+</html>
